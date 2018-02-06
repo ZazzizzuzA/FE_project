@@ -1,0 +1,123 @@
+* {
+    transition: 1.5s all ease-out;
+}
+
+body {
+    margin: 0px;
+    color: #0118af;
+    font-size: 18px;
+}
+
+.block {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#head {
+    position: fixed;
+    top: 0px;
+}
+
+.block:last-child {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1d7f42;
+    color: rgba(245, 230, 245, 0.8);
+    font-size: 14px;
+}
+
+.block__item {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(181, 211, 244, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.block__item a img {
+    border-radius: 5px;
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.block__item a:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+.block__item_p {
+    padding: 0px 0px 0px 30px;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.effect3 {
+    transition: 1s all ease-out;
+    background: #ff9000;
+    color: #5000ba;
+    font-size: 1.3em;
+    font-style: italic;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.effect {
+    opacity: 0;
+    transform-origin: 0 100% 0;
+    transform: rotate(1080deg) scale(2);
+}
+
+.effect2 {
+    transition: 1s all cubic-bezier(.1, -1.5, .1, 2.5);
+    transform: translateX(330px) translateY(-280px) scale(0.5);
+    opacity: 0;
+}
+
+.block__button {
+    text-decoration-style: none;
+    border: none;
+    color: #01395d;
+    border-radius: 5px;
+    background: linear-gradient(to bottom left, #009b52, #7fe2b4, #79f1fc);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 40px;
+    margin-right: 20px;
+}
+
+span {
+    color: #ff00fa;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5em;
+}

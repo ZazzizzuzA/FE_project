@@ -1,0 +1,19 @@
+{
+  "name": "about_me",
+  "version": "1.0.0",
+  "description": "This project is a form include some information 'bout me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZazzizzuzA/FE_project.git"
+  },
+  "author": "Michael P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZazzizzuzA/FE_project/issues"
+  },
+  "homepage": "https://github.com/ZazzizzuzA/FE_project#readme"
+}
