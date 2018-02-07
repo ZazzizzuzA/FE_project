@@ -13,6 +13,7 @@ var list = document.createElement('ol');
 var listPoint1 = document.createElement('li');
 var listPoint2 = document.createElement('li');
 var listPoint3 = document.createElement('li');
+var gif = document.createElement('img');
 
 head.id = "head";
 head.classList.add('block');
@@ -44,6 +45,9 @@ container3.setAttribute('align', 'center');
 
 img.src = "1.jpg";
 img.classList.add('effect');
+gif.src = "magic.gif";
+gif.id = "magicGif";
+gif.classList.add('hide');
 
 link.id = "photo";
 link.href = "https://www.facebook.com/musicvyp";
@@ -53,7 +57,7 @@ list.innerHTML = "Основное:<br/><br/>";
 list.id = "list";
 listPoint1.innerHTML = "ФИО, возраст - Меня зовут Пилипенко Михаил Валерьевич. Мне 28 лет.<br/><br/>";
 listPoint2.innerHTML = "Почему я здесь и как давно изучаю HTML, CSS, JS - Впервые попробовал осенью 2016 года, но без особого энтузиазма. Решал по паре задаче в день на сайте htmlacademy.ru. К концу года понял, что нравится. Весной решил, что пойду на курсы и осенью 2017 начал обучение в ITEA. Причин, по которым я здесь, много. Основная - движение жизнь и каждому движению свое время; я хочу добиться большего, чем есть сейчас и хочу стремиться к лучшему и лучшим.<br/><br/>";
-listPoint3.innerHTML = "Чтоб было не очень скучно читать используйте <span>МАГИЮ</span>.";
+listPoint3.innerHTML = "P.S.Чтоб было не очень скучно читать используй <span>МАГИЮ</span>.";
 
 img.onload = function() {
     this.classList.remove('effect');
@@ -74,12 +78,24 @@ list.appendChild(listPoint2);
 list.appendChild(listPoint3);
 photo.appendChild(img);
 document.body.appendChild(footer);
+mainCont.appendChild(gif);
 
-var margForMain = window.head.offsetHeight;
-main.style = "margin-top:" + margForMain + "px;";
-console.log(margForMain);
+main.style = "margin-top:" + window.head.offsetHeight + "px; margin-bottom:" + window.foot.offsetHeight + "px;";
+
 button.onclick = function() {
-    link.classList.toggle('effect2');
+    photo.classList.toggle('effect2');
+    if (link.classList.contains("effect2")) {
+        magicGif.classList.remove('hide');
+        magicGif.classList.add('effect4');
+        photo.classList.toggle('hide');
+
+
+    } else {
+        magicGif.classList.add('hide');
+        photo.classList.remove('hide');
+
+
+    }
 }
 button2.onclick = function() {
     paragraf.classList.toggle('effect3');
