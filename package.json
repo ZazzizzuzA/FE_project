@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/ZazzizzuzA/FE_project/issues"
   },
-  "homepage": "https://github.com/ZazzizzuzA/FE_project#readme"
+  "homepage": "https://github.com/ZazzizzuzA/FE_project#readme",
+  "dependencies": {}
 }
