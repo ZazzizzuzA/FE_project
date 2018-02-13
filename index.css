@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     transition: 1.5s all ease-out;
 }
@@ -234,4 +235,220 @@ span {
 .block__long-flex {
     display: flex;
     flex-flow: column wrap;
+=======
+* {
+    transition: 1.5s all ease-out;
+}
+
+body {
+    margin: 0px;
+    color: #0118af;
+    font-size: 18px;
+}
+
+.hide {
+    position: absolute;
+    left: 15%;
+    opacity: 0;
+}
+
+.block {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#head {
+    position: fixed;
+    top: 0px;
+    z-index: 20;
+}
+
+.block:last-child {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1d7f42;
+    color: rgba(245, 230, 245, 0.8);
+    font-size: 14px;
+    z-index: 20;
+}
+
+.block__item {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(181, 211, 244, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.block__item a img {
+    border-radius: 5px;
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.block__item a:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+.block__item_p {
+    padding: 0px 10px 0px 30px;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+.effect3 {
+    transition: 1s all ease-out;
+    background: #ff9000;
+    color: #5000ba;
+    font-size: 1.3em;
+    font-style: italic;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.effect {
+    opacity: 0;
+    transform-origin: 0 100% 0;
+    transform: rotate(1080deg) scale(2);
+}
+
+.effect2 {
+    transition: 1s all cubic-bezier(.1, -1.5, .1, 2.5);
+    transform: translateX(330px) translateY(-280px) scale(0.5);
+    opacity: 0;
+}
+
+.block__button {
+    text-decoration-style: none;
+    border: none;
+    color: #01395d;
+    border-radius: 5px;
+    background: linear-gradient(to bottom left, #009b52, #7fe2b4, #79f1fc);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 40px;
+    margin-right: 20px;
+}
+
+span {
+    color: #ff00fa;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5em;
+    text-decoration-line: underline;
+}
+
+#magicGif {
+    border-radius: 5px;
+    order: -1;
+    z-index: 10;
+    height: 300px;
+}
+
+.effect4 {
+    /* transition: 1s all cubic-bezier(.1, -1.5, .1, 2.5); */
+    transform-origin: 0 100% 0;
+    transform: rotate(-1080deg);
+}
+
+
+/* Первый вариант */
+
+
+/* .block__long {
+    background-color: #86e22fe5;
+    height: 150px;
+    clear: both;
+    margin: 10px 0px 10px 10px;
+    width: calc(60% + 40px);
+}
+
+.block__small {
+    box-sizing: border-box;
+    background-color: #013a5d83;
+    width: 20%;
+    height: 100px;
+    margin: 10px 10px;
+    left: 200px;
+    float: left;
+}
+
+.block__small:nth-child(3n+5) {
+    clear: both;
+} */
+
+/* Второй вариант */
+
+.block__small-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.block__small-flex div {
+    display: flex;
+    width: 75%;
+    padding: 0px 0px 10px 0px;
+}
+
+.block__small-flex div div {
+    display: flex;
+    padding: 10px;
+    background-color: #013a5d83;
+    flex: 1;
+}
+
+.block__small-flex div div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.block__long-flex div {
+    background-color: #86e22fe5;
+    height: 100px;
+    width: 75%;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.block__long-flex div:not(:first-child) {
+    margin-top: 10px;
+}
+
+.block__long-flex {
+    display: flex;
+    flex-flow: column wrap;
+>>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
 }

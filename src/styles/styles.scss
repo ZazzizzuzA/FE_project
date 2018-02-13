@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import '_var.scss';
 @import '_reset.scss';
 .interface {
@@ -124,4 +125,40 @@ body {
             text-align: left;
         }
     }
+=======
+@import '_var.scss';
+@import '_reset.scss';
+
+.interface {
+	background-color: #BDBDBD;
+	@include margin(10px, 15px);
+	@include padding(10px, 5px);
+}
+.success {
+	@extend .interface;
+	background-color: $green_bg;
+	color: $first_black;
+
+	&:hover {
+		background-color: $indigo;
+	}
+}
+.error {
+	@extend .interface;
+	background-color: $orange;
+	color: $first_black;
+
+	&:hover {
+		background-color: $red;
+	}
+}
+.warning {
+	@extend .interface;
+	background-color: $lime;
+	color: $first_black;
+
+	&:hover {
+		background-color: $pink_bg;
+	}
+>>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
 }
