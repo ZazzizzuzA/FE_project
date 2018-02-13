@@ -4,7 +4,7 @@
   "description": "This project is a form include some information 'bout me.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,10 @@
     "url": "https://github.com/ZazzizzuzA/FE_project/issues"
   },
   "homepage": "https://github.com/ZazzizzuzA/FE_project#readme",
-  "dependencies": {}
+  "dependencies": {
+    "css-loader": "^0.28.9",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1"
+  }
 }

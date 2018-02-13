@@ -7,7 +7,28 @@ module.exports = {
     },
     output: {
         filename: "[name].js",
-        path: __dirname
+        path: path.resolve(__dirname, "build"),
     },
-    watch: true
+    watch: true,
+    module: {
+    	rules: [
+    		{
+    			test: /\.css$/, 
+    			use: [
+    				{
+    					loader: "css-loader",
+    				}
+    			]
+    		},
+    		{
+    			test: /\.scss$/,
+    			use: [
+    				{ loader: "style-loader" },
+    				{ loader: "css-loader" },
+    				{ loader: "sass-loader" }
+    			]
+    		} 
+
+    	]
+    }
 }

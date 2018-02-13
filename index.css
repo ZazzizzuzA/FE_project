@@ -20,6 +20,28 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+.block__head{
+    max-height: 10%;
+    width: 100%;
+    background-color: #052165;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.block__head h1{
+   flex: 4; 
+   text-align: center;
+}
+.block__head div {
+    flex: 1;
+    font-size: 0.8em;
+}
+.block__head_logo {
+    height: 100px;
+}
 
 #head {
     position: fixed;
@@ -154,6 +176,7 @@ span {
     height: 150px;
     clear: both;
     margin: 10px 0px 10px 10px;
+    width: calc(60% + 40px);
 }
 
 .block__small {
@@ -162,6 +185,7 @@ span {
     width: 20%;
     height: 100px;
     margin: 10px 10px;
+    left: 200px;
     float: left;
 }
 
@@ -169,25 +193,25 @@ span {
     clear: both;
 } */
 
-
 /* Второй вариант */
 
 .block__small-flex {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .block__small-flex div {
     display: flex;
-    justify-content: center;
-    align-self: center;
     width: 75%;
     padding: 0px 0px 10px 0px;
 }
 
 .block__small-flex div div {
-    padding: 80px;
+    display: flex;
+    padding: 10px;
     background-color: #013a5d83;
+    flex: 1;
 }
 
 .block__small-flex div div:not(:last-child) {

@@ -1,0 +1,127 @@
+@import '_var.scss';
+@import '_reset.scss';
+.interface {
+    background-color: #BDBDBD;
+    @include margin(10px, 15px);
+    @include padding(10px, 5px);
+}
+
+.success {
+    @extend .interface;
+    background-color: $green_bg;
+    color: $first_black;
+    &:hover {
+        background-color: $indigo;
+    }
+}
+
+.error {
+    @extend .interface;
+    background-color: $orange;
+    color: $first_black;
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.warning {
+    @extend .interface;
+    background-color: $lime;
+    color: $first_black;
+    &:hover {
+        background-color: $pink_bg;
+    }
+}
+
+body {
+    display: flex;
+}
+
+.block__sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: $blue_bg;
+    color: $first_white;
+    width: 20%;
+    box-sizing: border-box;
+    height: 1000px;
+    .block__sidebar_profile {
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 1.2em;
+            margin-bottom: 0px;
+        }
+        h5 {
+            margin: 10px 0px;
+        }
+        .block__sidebar_profile-icons {
+            display: inline-flex;
+            justify-content: space-around;
+            width: inherit;
+            font-size: 1.2em;
+            padding: 10px 0px;
+        }
+    }
+    .block__sidebar_menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        button {
+            color: $first_white;
+            border-style: none;
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+        }
+        button:last-child {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-right: 4px solid $indigo;
+            padding-right: calc(15px - 4px);
+        }
+    }
+}
+
+.block__main {
+    @include padding(15px, 30px);
+    display: flex;
+    background-color: $purple;
+    box-sizing: border-box;
+    width: 100%;
+    color: $first_white;
+    .block__main_title {
+        display: flex;
+        height: 10%;
+        align-items: center;
+        width: inherit;
+        h1 {
+            font-weight: 100;
+            margin: 0px;
+            flex: 2;
+        }
+        div {
+            @include padding(20px, 30px);
+            background-color: $grey;
+            width: 150px;
+            text-align: center;
+        }
+        div:hover {
+            background-color: $indigo;
+        }
+        div:last-child {
+            flex: 1.5;
+            margin-left: 10px;
+            text-align: left;
+        }
+    }
+}

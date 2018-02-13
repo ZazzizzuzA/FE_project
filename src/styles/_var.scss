@@ -1,0 +1,23 @@
+$first_black: #212121;
+$first_white: #E3F2FD;
+$blue: rgba(0, 174, 255, 1);
+$green: #00E676;
+$red: #E64A19;
+$pink: #C51162;
+$yellow: #FFFF00;
+$grey: rgba(189, 189, 189, 0.37);
+$purple: #9C27B0;
+$orange: #FF9800;
+$lime: #C6FF00;
+$indigo: #304FFE;
+$purple_bg: #CE93D8;
+$pink_bg: #F48FB1;
+$green_bg: #A5D6A7;
+$blue_bg: rgb(79, 110, 247);
+@mixin margin($vertical, $horizontal) {
+    margin: $vertical $horizontal;
+}
+
+@mixin padding($vertical, $horizontal) {
+    padding: $vertical $horizontal;
+}
