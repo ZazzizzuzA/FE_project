@@ -154,6 +154,7 @@ span {
     height: 150px;
     clear: both;
     margin: 10px 0px 10px 10px;
+    width: calc(60% + 40px);
 }
 
 .block__small {
@@ -162,6 +163,7 @@ span {
     width: 20%;
     height: 100px;
     margin: 10px 10px;
+    left: 200px;
     float: left;
 }
 
@@ -169,25 +171,25 @@ span {
     clear: both;
 } */
 
-
 /* Второй вариант */
 
 .block__small-flex {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .block__small-flex div {
     display: flex;
-    justify-content: center;
-    align-self: center;
     width: 75%;
     padding: 0px 0px 10px 0px;
 }
 
 .block__small-flex div div {
-    padding: 80px;
+    display: flex;
+    padding: 10px;
     background-color: #013a5d83;
+    flex: 1;
 }
 
 .block__small-flex div div:not(:last-child) {

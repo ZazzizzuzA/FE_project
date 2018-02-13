@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,23 +68,28 @@
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js__ = __webpack_require__(10);
 
 
 __WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js__["a" /* default */].render();
 
 /***/ }),
-/* 5 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_posts_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_engine_posts_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_posts_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_engine_posts_js__ = __webpack_require__(12);
 
 
 
@@ -94,30 +99,7 @@ let controller = {
     work: function() {
         let result = [],
             data = this.model.data;
-        result = data.map(function(el) {
-
-            let html = document.createElement(el.tag);
-
-            if (el.body) {
-                html.innerHTML = el.body;
-            }
-            if (el.src) {
-                html.setAttribute("src", el.src);
-            }
-            if (el.href) {
-                html.setAttribute("href", el.href);
-            }
-            if (el.class) {
-                html.classList.add(el.class);
-            }
-            if (el.class2) {
-                html.classList.add(el.class2);
-
-            }
-
-            return html;
-
-        });
+        result = data.map(trispile);
 
         this.markUp = result;
         return result;
@@ -127,14 +109,47 @@ let controller = {
         this.work();
         this.view.render(this.markUp);
     },
-    markUp: [],
+    markUp: []
 
 };
+
+function trispile(el) {
+    let html;
+   if (el && el.body && el.tag){
+     html = document.createElement(el.tag);
+
+     if (typeof el.body === "object") {
+
+        if (el.body.length) {
+            html.innerHTML = el.body.map(trispile);
+        } else {
+            html.innerHTML = trispile(el.body);
+        }
+     } else {
+        html.innerHTML = el.body;
+     }
+
+     if (el.src) {
+                html.setAttribute("src", el.src);
+            }
+    if (el.href) {
+                html.setAttribute("href", el.href);
+            }
+    if (el.class) {
+                html.classList.add(el.class);
+            }
+    if (el.class2) {
+                html.classList.add(el.class2);
+            }
+   }
+
+   return html ? html : el;
+}
 
 /* harmony default export */ __webpack_exports__["a"] = (controller);
 
 /***/ }),
-/* 6 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -156,42 +171,41 @@ let controller = {
     // ]
 
     // Second varition
-    data: [
-            { tag: "div", body: "<div><div>est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla</div><div>Block 2</div><div>Block 3</div></div><div><div>Block 4</div><div>Block 5</div><div>Block 6</div></div><div><div>Block 7</div><div>Block 8</div><div>ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit</div></div>", class: "block__small-flex" },
-            { tag: "div", body: "<div>Block 10</div><div>Block 11</div>", class: "block__long-flex" },
+    // data: [
+    //         { tag: "div", body: "<div><div>Block 1</div><div>Block 2</div><div>Block 3</div></div><div><div>Block 4</div><div>Block 5</div><div>Block 6</div></div><div><div>Block 7</div><div>Block 8</div><div>ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit</div></div>", class: "block__small-flex" },
+    //         { tag: "div", body: "<div>Block 10</div><div>Block 11</div>", class: "block__long-flex" },
 
-        ]
+    //     ]
         // Третий вариант, который я хочу использовать
 
-    // data: [{
-    //         tag: "div",
-    //         body: [
-    //             { tag: "div", body: "Block 1", class: "block__item" },
-    //             { tag: "div", body: "Block 2", class: "block__item" },
-    //             { tag: "div", body: "Block 3", class: "block__item" },
-    //             { tag: "div", body: "Block 4", class: "block__item" },
-    //             { tag: "div", body: "Block 5", class: "block__item" },
-    //             { tag: "div", body: "Block 6", class: "block__item" },
-    //             { tag: "div", body: "Block 7", class: "block__item" },
-    //             { tag: "div", body: "Block 8", class: "block__item" },
-    //             { tag: "div", body: "Block 9", class: "block__item" },
-    //         ],
-    //         class: "block-flex"
-    //     },
-    //     {
-    //         tag: "div",
-    //         body: [
-    //             { tag: "div", body: "Widther block 1", class: "block2__item" },
-    //             { tag: "div", body: "Widther block 2", class: "block2__item" },
-    //         ],
-    //         class: "block2"
-    //     }
-
-    // ]
+    data: [{
+            tag: "div",
+            body: [
+                { tag: "div", body: "Block 1", class: "block__item" },
+                { tag: "div", body: "Block 2", class: "block__item" },
+                { tag: "div", body: "Block 3", class: "block__item" },
+                { tag: "div", body: "Block 4", class: "block__item" },
+                { tag: "div", body: "Block 5", class: "block__item" },
+                { tag: "div", body: "Block 6", class: "block__item" },
+                { tag: "div", body: "Block 7", class: "block__item" },
+                { tag: "div", body: "Block 8", class: "block__item" },
+                { tag: "div", body: "Block 9", class: "block__item" },
+            ],
+            class: "block__small-flex"
+        },
+        {
+            tag: "div",
+            body: [
+                { tag: "div", body: "Widther block 1", class: "block2__item" },
+                { tag: "div", body: "Widther block 2", class: "block2__item" },
+            ],
+            class: "block__long-flex"
+        }
+    ]
 });
 
 /***/ }),
-/* 7 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
