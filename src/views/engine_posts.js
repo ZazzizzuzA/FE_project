@@ -1,6 +1,6 @@
 export default {
     render: function(data) {
-        var body = document.getElementsByTagName("body")[0];
+        var body = document.getElementById("content");
         data.forEach(function(el) {
             body.appendChild(el);
 

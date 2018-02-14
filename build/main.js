@@ -72,7 +72,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_styles_scss__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_styles_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__controllers_builderCtrl_js__ = __webpack_require__(6);
-<<<<<<< HEAD
 
 
 
@@ -180,115 +179,6 @@ __WEBPACK_IMPORTED_MODULE_1__controllers_builderCtrl_js__["a" /* default */].ren
 // }
 // button2.onclick = function() {
 //     paragraf.classList.toggle('effect3');
-=======
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_1__controllers_builderCtrl_js__["a" /* default */].render();
-
-// var head = document.createElement('header');
-// var article = document.createElement('article');
-// var footer = document.createElement('footer');
-// var container1 = document.createElement('div');
-// var paragraf = document.createElement('p');
-// var container3 = document.createElement('h1');
-// var link = document.createElement('a');
-// var img = new Image();
-// var button = document.createElement('button');
-// var button2 = document.createElement('button');
-// var aboutMe = document.createElement("h3");
-// var list = document.createElement('ol');
-// var listPoint1 = document.createElement('li');
-// var listPoint2 = document.createElement('li');
-// var listPoint3 = document.createElement('li');
-// var gif = document.createElement('img');
-
-// head.id = "head";
-// head.classList.add('block');
-// head.style = "background-color: #d7f94d; justify-content: space-between;";
-
-// button.classList.add('block__button');
-// button.innerText = "Magic";
-// button.id = 'magicButton';
-// button2.classList.add('block__button');
-// button2.innerText = "Magic 2";
-// button2.id = 'magicButton2';
-
-// article.id = "main";
-// article.classList.add('block')
-// footer.id = "foot";
-// footer.classList.add('block');
-// footer.innerHTML = "Мои контакты: <br/><br/> ссылка на фото; <br/> телефон: 050-821-41-40."
-
-// container1.classList.add('block__item');
-// container1.id = "mainCont";
-// paragraf.classList.add('block__item_p');
-// paragraf.id = "text";
-// aboutMe.innerText = "А теперь что-то похожее на анкету";
-// paragraf.innerHTML = "<h3>Коротко обо мне</h3>Меня зовут Михаил Пилипенко. Мне 28 лет. Закончил обучение в школе. Потом в КНЕУ им. В. Гетьмана по специальности экономики предприятия, чем ни капли не горжусь. С 2012 года и по сей день работаю в государственном предприятии \"Энергоатом\".<br/> <br/>Идеалист, романтик - ужасное сочетание, так как их сочетание вызывает много противоречий, что часто похоже на забуксовавший автомобиль. Понятие \"романтик\" в моем понимании может отличаться от общепринятого. Об этом можно поговорить при личных встречах. Я вообще люблю говорить о себе. Ценю в людях чувство юмора. При верстке люблю обращать особое внимание незначительным мелочам, но которые создают первое впечатление о сайте. Хочу научиться оптимизировать свой код и находить более быстрые и практичные решения. Заинтересовал JavaScript и хочу совершенствовать навыки использования. <br/><br/> Стремлюсь сменить место работы, быть полезным и находить нестандартные, но эффективные решения каких-либо задач. Всегда рад новым знакомствам, дельным советам, общению.";
-
-// container3.id = "title";
-// container3.innerText = "Анкета";
-// container3.setAttribute('align', 'center');
-
-// img.src = "assets/img/1.jpg";
-// img.classList.add('effect');
-// gif.src = "assets/img/magic.gif";
-// gif.id = "magicGif";
-// gif.classList.add('hide');
-
-// link.id = "photo";
-// link.href = "https://www.facebook.com/musicvyp";
-// link.setAttribute('target', '_blank');
-
-// list.innerHTML = "Основное:<br/><br/>";
-// list.id = "list";
-// listPoint1.innerHTML = "ФИО, возраст - Меня зовут Пилипенко Михаил Валерьевич. Мне 28 лет.<br/><br/>";
-// listPoint2.innerHTML = "Почему я здесь и как давно изучаю HTML, CSS, JS - Впервые попробовал осенью 2016 года, но без особого энтузиазма. Решал по паре задаче в день на сайте htmlacademy.ru. К концу года понял, что нравится. Весной решил, что пойду на курсы и осенью 2017 начал обучение в ITEA. Причин, по которым я здесь, много. Основная - движение жизнь и каждому движению свое время; я хочу добиться большего, чем есть сейчас и хочу стремиться к лучшему и лучшим.<br/><br/>";
-// listPoint3.innerHTML = "P.S.Чтоб было не очень скучно читать используй <span>МАГИЮ</span>.";
-
-// img.onload = function() {
-//     this.classList.remove('effect');
-// }
-
-// document.body.appendChild(head);
-// document.body.appendChild(article);
-// head.appendChild(button);
-// head.appendChild(container3);
-// head.appendChild(button2);
-// main.appendChild(container1);
-// mainCont.appendChild(link);
-// mainCont.appendChild(paragraf);
-// text.appendChild(aboutMe);
-// text.appendChild(list);
-// list.appendChild(listPoint1);
-// list.appendChild(listPoint2);
-// list.appendChild(listPoint3);
-// photo.appendChild(img);
-// document.body.appendChild(footer);
-// mainCont.appendChild(gif);
-
-// main.style = "margin-top:" + window.head.offsetHeight + "px; margin-bottom:" + window.foot.offsetHeight + "px;";
-
-// button.onclick = function() {
-//     photo.classList.toggle('effect2');
-//     if (link.classList.contains("effect2")) {
-//         magicGif.classList.remove('hide');
-//         magicGif.classList.add('effect4');
-//         photo.classList.toggle('hide');
-
-
-//     } else {
-//         magicGif.classList.add('hide');
-//         photo.classList.remove('hide');
-
-
-//     }
-// }
-// button2.onclick = function() {
-//     paragraf.classList.toggle('effect3');
->>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
 // }
 
 /***/ }),
@@ -350,11 +240,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, "html,\nbody,\nul,\nol {\n  margin: 0;\n  padding: 0;\n  font-size: 16px; }\n\n.interface, .success, .error, .warning {\n  background-color: #BDBDBD;\n  margin: 10px 15px;\n  padding: 10px 5px; }\n\n.success {\n  background-color: #A5D6A7;\n  color: #212121; }\n  .success:hover {\n    background-color: #304FFE; }\n\n.error {\n  background-color: #FF9800;\n  color: #212121; }\n  .error:hover {\n    background-color: #E64A19; }\n\n.warning {\n  background-color: #C6FF00;\n  color: #212121; }\n  .warning:hover {\n    background-color: #F48FB1; }\n\nbody {\n  display: flex; }\n\n.block__sidebar {\n  display: flex;\n  flex-direction: column;\n  background-color: #4f6ef7;\n  color: #E3F2FD;\n  width: 20%;\n  box-sizing: border-box;\n  height: 1000px; }\n  .block__sidebar .block__sidebar_profile {\n    text-align: center;\n    width: 100%;\n    padding: 15px;\n    box-sizing: border-box; }\n    .block__sidebar .block__sidebar_profile img {\n      width: 100px;\n      border-radius: 50%; }\n    .block__sidebar .block__sidebar_profile h4 {\n      font-weight: 400;\n      font-size: 1.2em;\n      margin-bottom: 0px; }\n    .block__sidebar .block__sidebar_profile h5 {\n      margin: 10px 0px; }\n    .block__sidebar .block__sidebar_profile .block__sidebar_profile-icons {\n      display: inline-flex;\n      justify-content: space-around;\n      width: inherit;\n      font-size: 1.2em;\n      padding: 10px 0px; }\n  .block__sidebar .block__sidebar_menu {\n    display: flex;\n    flex-direction: column;\n    width: 100%; }\n    .block__sidebar .block__sidebar_menu button {\n      color: #E3F2FD;\n      border-style: none;\n      border-top: 2px solid rgba(255, 255, 255, 0.5);\n      background-color: rgba(255, 255, 255, 0.1);\n      padding: 15px; }\n    .block__sidebar .block__sidebar_menu button:last-child {\n      border-bottom: 2px solid rgba(255, 255, 255, 0.5); }\n    .block__sidebar .block__sidebar_menu button:hover {\n      background-color: rgba(255, 255, 255, 0.3);\n      border-right: 4px solid #304FFE;\n      padding-right: calc(15px - 4px); }\n\n.block__main {\n  padding: 15px 30px;\n  display: flex;\n  background-color: #9C27B0;\n  box-sizing: border-box;\n  width: 100%;\n  color: #E3F2FD; }\n  .block__main .block__main_title {\n    display: flex;\n    height: 10%;\n    align-items: center;\n    width: inherit; }\n    .block__main .block__main_title h1 {\n      font-weight: 100;\n      margin: 0px;\n      flex: 2; }\n    .block__main .block__main_title div {\n      padding: 20px 30px;\n      background-color: rgba(189, 189, 189, 0.37);\n      width: 150px;\n      text-align: center; }\n    .block__main .block__main_title div:hover {\n      background-color: #304FFE; }\n    .block__main .block__main_title div:last-child {\n      flex: 1.5;\n      margin-left: 10px;\n      text-align: left; }\n", ""]);
-=======
-exports.push([module.i, "html, body, ul, ol {\n  margin: 0;\n  padding: 0; }\n\n.interface, .success, .error, .warning {\n  background-color: #BDBDBD;\n  margin: 15px 10px;\n  padding: 5px 10px; }\n\n.success {\n  background-color: #A5D6A7;\n  color: #212121; }\n  .success:hover {\n    background-color: #304FFE; }\n\n.error {\n  background-color: #FF9800;\n  color: #212121; }\n  .error:hover {\n    background-color: #E64A19; }\n\n.warning {\n  background-color: #C6FF00;\n  color: #212121; }\n  .warning:hover {\n    background-color: #F48FB1; }\n", ""]);
->>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
+exports.push([module.i, "html,\nbody,\nul,\nol {\n  margin: 0;\n  padding: 0;\n  font-size: 16px; }\n\n.interface, .success, .error, .warning {\n  background-color: #BDBDBD;\n  margin: 10px 15px;\n  padding: 10px 5px; }\n\n.success {\n  background-color: #A5D6A7;\n  color: #212121; }\n  .success:hover {\n    background-color: #304FFE; }\n\n.error {\n  background-color: #FF9800;\n  color: #212121; }\n  .error:hover {\n    background-color: #E64A19; }\n\n.warning {\n  background-color: #C6FF00;\n  color: #212121; }\n  .warning:hover {\n    background-color: #F48FB1; }\n\nbody {\n  display: flex;\n  flex-flow: row wrap; }\n\n.block__sidebar {\n  display: flex;\n  flex-direction: column;\n  background-color: #4f6ef7;\n  color: #E3F2FD;\n  width: 20%;\n  box-sizing: border-box;\n  height: 1000px; }\n  .block__sidebar .block__sidebar_profile {\n    text-align: center;\n    width: 100%;\n    padding: 15px;\n    box-sizing: border-box; }\n    .block__sidebar .block__sidebar_profile img {\n      width: 100px;\n      border-radius: 50%; }\n    .block__sidebar .block__sidebar_profile h4 {\n      font-weight: 400;\n      font-size: 1.2em;\n      margin-bottom: 0px; }\n    .block__sidebar .block__sidebar_profile h5 {\n      margin: 10px 0px; }\n    .block__sidebar .block__sidebar_profile .block__sidebar_profile-icons {\n      display: inline-flex;\n      justify-content: space-around;\n      width: inherit;\n      font-size: 1.2em;\n      padding: 10px 0px; }\n  .block__sidebar .block__sidebar_menu {\n    display: flex;\n    flex-direction: column;\n    width: 100%; }\n    .block__sidebar .block__sidebar_menu button {\n      color: #E3F2FD;\n      border-style: none;\n      border-top: 2px solid rgba(255, 255, 255, 0.5);\n      background-color: rgba(255, 255, 255, 0.1);\n      padding: 15px; }\n    .block__sidebar .block__sidebar_menu button:last-child {\n      border-bottom: 2px solid rgba(255, 255, 255, 0.5); }\n    .block__sidebar .block__sidebar_menu button:hover {\n      background-color: rgba(255, 255, 255, 0.3);\n      border-right: 4px solid #304FFE;\n      padding-right: calc(15px - 4px); }\n\n.block__head {\n  padding: 15px 30px;\n  display: flex;\n  align-self: flex-start;\n  justify-content: space-between;\n  background-color: #9C27B0;\n  box-sizing: border-box;\n  width: 100%;\n  color: #E3F2FD; }\n  .block__head img {\n    max-height: 100px; }\n  .block__head h1 {\n    flex: 3.5 0;\n    text-align: center; }\n  .block__head div {\n    flex: 1 1; }\n\n.block__main {\n  padding: 15px 30px;\n  display: flex;\n  background-color: #00E676;\n  align-content: flex-start;\n  justify-content: center;\n  box-sizing: border-box;\n  flex: 2;\n  color: #212121;\n  flex-flow: row wrap; }\n  .block__main .block__main_title {\n    display: flex;\n    height: 10%;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%; }\n    .block__main .block__main_title h1 {\n      font-weight: 100;\n      margin: 0px;\n      flex: 3; }\n    .block__main .block__main_title div {\n      padding: 20px 30px;\n      background-color: rgba(189, 189, 189, 0.37);\n      width: 150px;\n      text-align: center; }\n    .block__main .block__main_title div:hover {\n      background-color: #304FFE; }\n    .block__main .block__main_title div:last-child {\n      flex: 1.5;\n      margin-left: 10px;\n      text-align: left; }\n  .block__main .block__main_content {\n    padding: 20px 0px;\n    display: flex;\n    flex-flow: row wrap;\n    width: 100%;\n    align-content: space-around;\n    justify-content: space-between; }\n    .block__main .block__main_content div {\n      margin: 10px 0px;\n      border: 1px solid #002280;\n      text-align: center; }\n    .block__main .block__main_content .block__small {\n      padding: 10px 10px;\n      background-color: #E64A19;\n      width: 25%; }\n    .block__main .block__main_content .block__long {\n      padding: 10px 10px;\n      flex: 1 0 100%;\n      background-color: #C6FF00;\n      box-sizing: border-box; }\n", ""]);
 
 // exports
 
@@ -924,7 +810,6 @@ module.exports = function (css) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_js__ = __webpack_require__(7);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__models_info_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_engine_js__ = __webpack_require__(8);
 
@@ -965,55 +850,12 @@ let controller = {
 
 };
 
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_engine_js__ = __webpack_require__(8);
-
-
-
-
-let controller = {
-	model: __WEBPACK_IMPORTED_MODULE_0__models_info_js__["a" /* default */], 				//model: "model"
-	view: __WEBPACK_IMPORTED_MODULE_1__views_engine_js__["a" /* default */],				
-	work: function() {
-		let result = [],
-		data = this.model.data;
-		result = data.map(function(el){
-
-			let html = document.createElement(el.tag);
-			if (el.body && el.tag != "img") {
-				html.innerHTML = el.body;
-			}
-			if (el.src){
-				html.setAttribute("src", el.src);
-			}
-			if (el.href){
-				html.setAttribute("href", el.href);
-			}
-			return html;
-
-		});
-
-		this.markUp = result;
-		return result;
-
-	},
-	render: function(){
-		this.work();
-		this.view.render(this.markUp);
-	},
-	markUp: [],
-
-};
-
->>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
 /* harmony default export */ __webpack_exports__["a"] = (controller); 
 
 /***/ }),
 /* 7 */
-<<<<<<< HEAD
-/***/ (function(module, __webpack_exports__) {
+/***/ (function(module, exports) {
 
-"use strict";
 // export default {
 //     data: [
 //         { tag: "h1", body: "Анкета Михаила Пилипенка" },
@@ -1025,47 +867,20 @@ let controller = {
 //         { tag: "li", body: "Ценю в людях чувство юмора. При верстке люблю обращать особое внимание незначительным мелочам, но которые создают первое впечатление о сайте. Хочу научиться оптимизировать свой код и находить более быстрые и практичные решения. Заинтересовал JavaScript и хочу совершенствовать навыки использования. Стремлюсь сменить место работы, быть полезным и находить нестандартные, но эффективные решения каких-либо задач. Всегда рад новым знакомствам, дельным советам, общению." }
 //     ]
 // }
-=======
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-    data: [
-        { tag: "h1", body: "Анкета Михаила Пилипенка" },
-        { tag: "a", body: "<img src=\"assets\/img\/1.jpg\">", href: "https://www.facebook.com/musicvyp" },
-        { tag: "a", body: "Страница с блоками", href: "./posts.html" },
-        { tag: "ul", body: "По пунктам" },
-        { tag: "li", body: "Коротко обо мнеМеня зовут Михаил Пилипенко. Мне 28 лет. Закончил обучение в школе. Потом в КНЕУ им. В. Гетьмана по специальности экономики предприятия, чем ни капли не горжусь. С 2012 года и по сей день работаю в государственном предприятии \"Энергоатом\"." },
-        { tag: "li", body: "Идеалист, романтик - ужасное сочетание, так как их сочетание вызывает много противоречий, что часто похоже на забуксовавший автомобиль. Понятие \"романтик\" в моем понимании может отличаться от общепринятого. Об этом можно поговорить при личных встречах. Я вообще люблю говорить о себе. Вот, помню, однажды..." },
-        { tag: "li", body: "Ценю в людях чувство юмора. При верстке люблю обращать особое внимание незначительным мелочам, но которые создают первое впечатление о сайте. Хочу научиться оптимизировать свой код и находить более быстрые и практичные решения. Заинтересовал JavaScript и хочу совершенствовать навыки использования. Стремлюсь сменить место работы, быть полезным и находить нестандартные, но эффективные решения каких-либо задач. Всегда рад новым знакомствам, дельным советам, общению." }
-    ]
-});
->>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
 
 /***/ }),
 /* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["a"] = ({
-	render: function(data){
-		var body = document.getElementsByTagName("body")[0];
-		data.forEach(function(el){
-			body.appendChild(el);
-		});
-		console.log(data);
-	}
-=======
-/* harmony default export */ __webpack_exports__["a"] = ({
-	render: function(data){
-		var body = document.getElementsByTagName("body")[0];
-		data.forEach(function(el){
-			body.appendChild(el);
-		});
-		console.log(data);
-	}
->>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
+    render: function(data) {
+        var body = document.getElementsByTagName("body")[0];
+        data.forEach(function(el) {
+            body.appendChild(el);
+        });
+        console.log(data);
+    }
 });
 
 /***/ })

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $first_black: #212121;
 $first_white: #E3F2FD;
 $blue: rgba(0, 174, 255, 1);
@@ -22,30 +21,3 @@ $blue_bg: rgb(79, 110, 247);
 @mixin padding($vertical, $horizontal) {
     padding: $vertical $horizontal;
 }
-=======
-$first_black: #212121;
-$first_white: #E3F2FD;
-$blue: #00B0FF;
-$green: #00E676;
-$red: #E64A19;
-$pink: #C51162;
-$yellow: #FFFF00;
-$grey: #BDBDBD;
-$purple: #9C27B0;
-$orange: #FF9800;
-$lime: #C6FF00;
-$indigo: #304FFE;
-$purple_bg: #CE93D8;
-$pink_bg: #F48FB1;
-$green_bg: #A5D6A7;
-$blue_bg: #4FC3F7;
-
-@mixin margin($horizontal, $vertical) {
-	margin: $vertical $horizontal;
-}
-@mixin padding($horizontal, $vertical) {
-	padding: $vertical $horizontal;
-}
-
-
->>>>>>> f7827f84746421d50182295b8dafa686315e5fdf
