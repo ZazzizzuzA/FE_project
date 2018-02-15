@@ -1,7 +1,7 @@
 {
   "name": "about_me",
   "version": "1.0.0",
-  "description": "This project is a form include some information 'bout me.",
+  "description": "This project is a form include some information about me.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack"

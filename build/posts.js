@@ -63,165 +63,86 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
+/******/ ({
+
+/***/ 10:
+/***/ (function(module, __webpack_exports__) {
+
+"use strict";
+// import model from "../models/info_posts.js";
+// import view from "../views/engine_posts.js";
+
+// let controller = {
+//     model,
+//     view,
+//     work: function() {
+//         let result = [],
+//             data = this.model.data;
+//         result = data.map(trispile);
+
+//         this.markUp = result;
+//         return result;
+
+//     },
+//     render: function() {
+//         this.work();
+//         this.view.render(this.markUp);
+//     },
+//     markUp: []
+
+// };
+
+// function trispile(el) {
+//     let html;
+
+//     if (el && el.body && el.tag) {
+
+//         html = document.createElement(el.tag);
+
+//         if (typeof el.body === "object") {
+
+//             if (el.body.length) {
+//                 el.body.map(trispile).forEach(element => {
+//                     html.appendChild(element)
+//                 });
+//             } else {
+//                 html.appendChild(trispile(el.body));
+//             }
+//         } else {
+//             html.innerHTML = el.body;
+//         }
+//         if (el.src) {
+//             html.setAttribute("src", el.src);
+//         }
+//         if (el.href) {
+//             html.setAttribute("href", el.href);
+//         }
+//         if (el.class) {
+//             html.classList.add(el.class);
+//         }
+//         if (el.id) {
+//             html.setAttribute("id", el.id);
+//         }
+//     }
+
+//     return html ? html : el;
+// }
+
+// export default controller;
+
+/***/ }),
+
+/***/ 9:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js__);
 
 
-__WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js__["a" /* default */].render();
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_posts_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_engine_posts_js__ = __webpack_require__(12);
-
-
-
-let controller = {
-    model: __WEBPACK_IMPORTED_MODULE_0__models_info_posts_js__["a" /* default */], //model: "model"
-    view: __WEBPACK_IMPORTED_MODULE_1__views_engine_posts_js__["a" /* default */],
-    work: function() {
-        let result = [],
-            data = this.model.data;
-        result = data.map(trispile);
-
-        this.markUp = result;
-        return result;
-
-    },
-    render: function() {
-        this.work();
-        this.view.render(this.markUp);
-    },
-    markUp: []
-
-};
-
-function trispile(el) {
-    let html;
-
-    if (el && el.body && el.tag) {
-
-        html = document.createElement(el.tag);
-
-        if (typeof el.body === "object") {
-
-            if (el.body.length) {
-                html.innerHTML = el.body.map(trispile);
-            } else {
-                html.innerHTML = trispile(el.body);
-            }
-        } else {
-            html.innerHTML = el.body;
-        }
-
-        if (el.src) {
-            html.setAttribute("src", el.src);
-        }
-        if (el.href) {
-            html.setAttribute("href", el.href);
-        }
-        if (el.class) {
-            html.classList.add(el.class);
-        }
-        if (el.id) {
-            html.setAttribute("id", el.id);
-        }
-    }
-
-    return html ? html : el;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (controller);
-
-/***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-    // First variation
-
-    data: [
-        { tag: "div", body: "Все примеры, которые мы приводили выше, были построены с учетом однострочного (одностолбцового) расположения блоков. Надо сказать, что по умолчанию flex-контейнер всегда будет располагать блоки внутри себя в одну линию. Однако, спецификацией также поддерживается многострочный режим. За многострочность внутри flex-контейнера отвечает CSS свойство flex-wrap.", class: "block__small" },
-        { tag: "div", body: "Block 2", class: "block__small" },
-        { tag: "div", body: "Block 3", class: "block__small" },
-        { tag: "div", body: "Block 4", class: "block__small" },
-        { tag: "div", body: "Я думаю, что flexbox, конечно же, не вытеснит все остальные способы верстки, но, безусловно, в ближайшее время займет достойную нишу при решении огромного количества задач. И уж точно, пробовать работать с ним нужно уже сейчас. Одна из следующих статей будет посвящена конкретным примерам работы с flex-версткой. Подписывайтесь на новости ;)", class: "block__small" },
-        { tag: "div", body: "Block 6", class: "block__small" },
-        { tag: "div", body: "Block 7", class: "block__small" },
-        { tag: "div", body: "Block 8", class: "block__small" },
-        { tag: "div", body: "Block 9", class: "block__small" },
-        { tag: "div", body: "Задает изначальный размер по главной оси для flex-блока до того, как к нему будут применены преобразования, основанные на других flex-факторах. Может быть задан в любых единицах измерения длинны (px, em, %, …) или auto(по умолчанию). Если задан как auto – за основу берутся размеры блока (width, height), которые, в свою очередь, могут зависеть от размера контента, если не указанны явно.", class: "block__long" },
-        { tag: "div", body: "Block 11", class: "block__long" },
-    ]
-
-    // Second varition
-    // data: [
-    //         { tag: "div", body: "<div><div>Block 1</div><div>Block 2</div><div>Block 3</div></div><div><div>Block 4</div><div>Block 5</div><div>Block 6</div></div><div><div>Block 7</div><div>Block 8</div><div>ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit</div></div>", class: "block__small-flex" },
-    //         { tag: "div", body: "<div>Block 10</div><div>Block 11</div>", class: "block__long-flex" },
-
-    //     ]
-    // // Третий вариант, который я хочу использовать
-
-    // data: [{
-    //         tag: "div",
-    //         body: [
-    //             { tag: "div", body: "Block 1", class: "block__item" },
-    //             { tag: "div", body: "Block 2", class: "block__item" },
-    //             { tag: "div", body: "Block 3", class: "block__item" },
-    //             { tag: "div", body: "Block 4", class: "block__item" },
-    //             { tag: "div", body: "Block 5", class: "block__item" },
-    //             { tag: "div", body: "Block 6", class: "block__item" },
-    //             { tag: "div", body: "Block 7", class: "block__item" },
-    //             { tag: "div", body: "Block 8", class: "block__item" },
-    //             { tag: "div", body: "Block 9", class: "block__item" },
-    //         ],
-    //         class: "block__small-flex",
-    //         id: "first",
-    //     },
-    //     {
-    //         tag: "div",
-    //         body: [
-    //             { tag: "div", body: "Widther block 1", class: "block2__item" },
-    //             { tag: "div", body: "Widther block 2", class: "block2__item" },
-    //         ],
-    //         class: "block__long-flex",
-    //         id: "second",
-    //     }
-    // ]
-});
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-    render: function(data) {
-        var body = document.getElementById("content");
-        data.forEach(function(el) {
-            body.appendChild(el);
-
-        });
-    }
-});
+__WEBPACK_IMPORTED_MODULE_0__controllers_builderCtrl_posts_js___default.a.render();
 
 /***/ })
-/******/ ]);
+
+/******/ });

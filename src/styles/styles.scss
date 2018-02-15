@@ -45,7 +45,7 @@ body {
     color: $first_white;
     width: 20%;
     box-sizing: border-box;
-    height: 1000px;
+    min-height: 100%;
     .block__sidebar_profile {
         text-align: center;
         width: 100%;
@@ -75,6 +75,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
+
         button {
             color: $first_white;
             border-style: none;
@@ -126,7 +127,7 @@ body {
     flex-flow: row wrap;
     .block__main_title {
         display: flex;
-        height: 10%;
+       
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -165,7 +166,7 @@ body {
         .block__small {
             @include padding(10px, 10px);
             background-color: $red;
-            width: 25%;
+            width: 30%;
         }
         .block__long {
             @include padding(10px, 10px);

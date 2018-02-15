@@ -240,7 +240,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "html,\nbody,\nul,\nol {\n  margin: 0;\n  padding: 0;\n  font-size: 16px; }\n\n.interface, .success, .error, .warning {\n  background-color: #BDBDBD;\n  margin: 10px 15px;\n  padding: 10px 5px; }\n\n.success {\n  background-color: #A5D6A7;\n  color: #212121; }\n  .success:hover {\n    background-color: #304FFE; }\n\n.error {\n  background-color: #FF9800;\n  color: #212121; }\n  .error:hover {\n    background-color: #E64A19; }\n\n.warning {\n  background-color: #C6FF00;\n  color: #212121; }\n  .warning:hover {\n    background-color: #F48FB1; }\n\nbody {\n  display: flex;\n  flex-flow: row wrap; }\n\n.block__sidebar {\n  display: flex;\n  flex-direction: column;\n  background-color: #4f6ef7;\n  color: #E3F2FD;\n  width: 20%;\n  box-sizing: border-box;\n  height: 1000px; }\n  .block__sidebar .block__sidebar_profile {\n    text-align: center;\n    width: 100%;\n    padding: 15px;\n    box-sizing: border-box; }\n    .block__sidebar .block__sidebar_profile img {\n      width: 100px;\n      border-radius: 50%; }\n    .block__sidebar .block__sidebar_profile h4 {\n      font-weight: 400;\n      font-size: 1.2em;\n      margin-bottom: 0px; }\n    .block__sidebar .block__sidebar_profile h5 {\n      margin: 10px 0px; }\n    .block__sidebar .block__sidebar_profile .block__sidebar_profile-icons {\n      display: inline-flex;\n      justify-content: space-around;\n      width: inherit;\n      font-size: 1.2em;\n      padding: 10px 0px; }\n  .block__sidebar .block__sidebar_menu {\n    display: flex;\n    flex-direction: column;\n    width: 100%; }\n    .block__sidebar .block__sidebar_menu button {\n      color: #E3F2FD;\n      border-style: none;\n      border-top: 2px solid rgba(255, 255, 255, 0.5);\n      background-color: rgba(255, 255, 255, 0.1);\n      padding: 15px; }\n    .block__sidebar .block__sidebar_menu button:last-child {\n      border-bottom: 2px solid rgba(255, 255, 255, 0.5); }\n    .block__sidebar .block__sidebar_menu button:hover {\n      background-color: rgba(255, 255, 255, 0.3);\n      border-right: 4px solid #304FFE;\n      padding-right: calc(15px - 4px); }\n\n.block__head {\n  padding: 15px 30px;\n  display: flex;\n  align-self: flex-start;\n  justify-content: space-between;\n  background-color: #9C27B0;\n  box-sizing: border-box;\n  width: 100%;\n  color: #E3F2FD; }\n  .block__head img {\n    max-height: 100px; }\n  .block__head h1 {\n    flex: 3.5 0;\n    text-align: center; }\n  .block__head div {\n    flex: 1 1; }\n\n.block__main {\n  padding: 15px 30px;\n  display: flex;\n  background-color: #00E676;\n  align-content: flex-start;\n  justify-content: center;\n  box-sizing: border-box;\n  flex: 2;\n  color: #212121;\n  flex-flow: row wrap; }\n  .block__main .block__main_title {\n    display: flex;\n    height: 10%;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%; }\n    .block__main .block__main_title h1 {\n      font-weight: 100;\n      margin: 0px;\n      flex: 3; }\n    .block__main .block__main_title div {\n      padding: 20px 30px;\n      background-color: rgba(189, 189, 189, 0.37);\n      width: 150px;\n      text-align: center; }\n    .block__main .block__main_title div:hover {\n      background-color: #304FFE; }\n    .block__main .block__main_title div:last-child {\n      flex: 1.5;\n      margin-left: 10px;\n      text-align: left; }\n  .block__main .block__main_content {\n    padding: 20px 0px;\n    display: flex;\n    flex-flow: row wrap;\n    width: 100%;\n    align-content: space-around;\n    justify-content: space-between; }\n    .block__main .block__main_content div {\n      margin: 10px 0px;\n      border: 1px solid #002280;\n      text-align: center; }\n    .block__main .block__main_content .block__small {\n      padding: 10px 10px;\n      background-color: #E64A19;\n      width: 25%; }\n    .block__main .block__main_content .block__long {\n      padding: 10px 10px;\n      flex: 1 0 100%;\n      background-color: #C6FF00;\n      box-sizing: border-box; }\n", ""]);
+exports.push([module.i, "html,\nbody,\nul,\nol {\n  margin: 0;\n  padding: 0;\n  font-size: 16px; }\n\n.interface, .success, .error, .warning {\n  background-color: #BDBDBD;\n  margin: 10px 15px;\n  padding: 10px 5px; }\n\n.success {\n  background-color: #A5D6A7;\n  color: #212121; }\n  .success:hover {\n    background-color: #304FFE; }\n\n.error {\n  background-color: #FF9800;\n  color: #212121; }\n  .error:hover {\n    background-color: #E64A19; }\n\n.warning {\n  background-color: #C6FF00;\n  color: #212121; }\n  .warning:hover {\n    background-color: #F48FB1; }\n\nbody {\n  display: flex;\n  flex-flow: row wrap; }\n\n.block__sidebar {\n  display: flex;\n  flex-direction: column;\n  background-color: #4f6ef7;\n  color: #E3F2FD;\n  width: 20%;\n  box-sizing: border-box;\n  min-height: 100%; }\n  .block__sidebar .block__sidebar_profile {\n    text-align: center;\n    width: 100%;\n    padding: 15px;\n    box-sizing: border-box; }\n    .block__sidebar .block__sidebar_profile img {\n      width: 100px;\n      border-radius: 50%; }\n    .block__sidebar .block__sidebar_profile h4 {\n      font-weight: 400;\n      font-size: 1.2em;\n      margin-bottom: 0px; }\n    .block__sidebar .block__sidebar_profile h5 {\n      margin: 10px 0px; }\n    .block__sidebar .block__sidebar_profile .block__sidebar_profile-icons {\n      display: inline-flex;\n      justify-content: space-around;\n      width: inherit;\n      font-size: 1.2em;\n      padding: 10px 0px; }\n  .block__sidebar .block__sidebar_menu {\n    display: flex;\n    flex-direction: column;\n    width: 100%; }\n    .block__sidebar .block__sidebar_menu button {\n      color: #E3F2FD;\n      border-style: none;\n      border-top: 2px solid rgba(255, 255, 255, 0.5);\n      background-color: rgba(255, 255, 255, 0.1);\n      padding: 15px; }\n    .block__sidebar .block__sidebar_menu button:last-child {\n      border-bottom: 2px solid rgba(255, 255, 255, 0.5); }\n    .block__sidebar .block__sidebar_menu button:hover {\n      background-color: rgba(255, 255, 255, 0.3);\n      border-right: 4px solid #304FFE;\n      padding-right: calc(15px - 4px); }\n\n.block__head {\n  padding: 15px 30px;\n  display: flex;\n  align-self: flex-start;\n  justify-content: space-between;\n  background-color: #9C27B0;\n  box-sizing: border-box;\n  width: 100%;\n  color: #E3F2FD; }\n  .block__head img {\n    max-height: 100px; }\n  .block__head h1 {\n    flex: 3.5 0;\n    text-align: center; }\n  .block__head div {\n    flex: 1 1; }\n\n.block__main {\n  padding: 15px 30px;\n  display: flex;\n  background-color: #00E676;\n  align-content: flex-start;\n  justify-content: center;\n  box-sizing: border-box;\n  flex: 2;\n  color: #212121;\n  flex-flow: row wrap; }\n  .block__main .block__main_title {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%; }\n    .block__main .block__main_title h1 {\n      font-weight: 100;\n      margin: 0px;\n      flex: 3; }\n    .block__main .block__main_title div {\n      padding: 20px 30px;\n      background-color: rgba(189, 189, 189, 0.37);\n      width: 150px;\n      text-align: center; }\n    .block__main .block__main_title div:hover {\n      background-color: #304FFE; }\n    .block__main .block__main_title div:last-child {\n      flex: 1.5;\n      margin-left: 10px;\n      text-align: left; }\n  .block__main .block__main_content {\n    padding: 20px 0px;\n    display: flex;\n    flex-flow: row wrap;\n    width: 100%;\n    align-content: space-around;\n    justify-content: space-between; }\n    .block__main .block__main_content div {\n      margin: 10px 0px;\n      border: 1px solid #002280;\n      text-align: center; }\n    .block__main .block__main_content .block__small {\n      padding: 10px 10px;\n      background-color: #E64A19;\n      width: 30%; }\n    .block__main .block__main_content .block__long {\n      padding: 10px 10px;\n      flex: 1 0 100%;\n      background-color: #C6FF00;\n      box-sizing: border-box; }\n", ""]);
 
 // exports
 
@@ -810,63 +810,136 @@ module.exports = function (css) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_info_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__models_info_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_engine_js__ = __webpack_require__(8);
 
 
 
 
+// let controller = {
+// 	model, 			
+// 	view,				
+// 	work: function() {
+// 		let result = [],
+// 		data = this.model.data;
+// 		result = data.map(function(el){
+
+// 			let html = document.createElement(el.tag);
+// 			if (el.body && el.tag != "img") {
+// 				html.innerHTML = el.body;
+// 			}
+// 			if (el.src){
+// 				html.setAttribute("src", el.src);
+// 			}
+// 			if (el.href){
+// 				html.setAttribute("href", el.href);
+// 			}
+// 			return html;
+
+// 		});
+
+// 		this.markUp = result;
+// 		return result;
+
+// 	},
+// 	render: function(){
+// 		this.work();
+// 		this.view.render(this.markUp);
+// 	},
+// 	markUp: [],
+
+// };
+
+// export default controller; 
+
 let controller = {
-	model: __WEBPACK_IMPORTED_MODULE_0__models_info_js___default.a, 				//model: "model"
-	view: __WEBPACK_IMPORTED_MODULE_1__views_engine_js__["a" /* default */],				
-	work: function() {
-		let result = [],
-		data = this.model.data;
-		result = data.map(function(el){
+    model: __WEBPACK_IMPORTED_MODULE_0__models_info_js__["a" /* default */], 
+    view: __WEBPACK_IMPORTED_MODULE_1__views_engine_js__["a" /* default */],
+    work: function() {
+        let result = [];
+        return this.model.init().then(() => {
+	 		let data = this.model.data;
+	        // result = data.map(trispile);
 
-			let html = document.createElement(el.tag);
-			if (el.body && el.tag != "img") {
-				html.innerHTML = el.body;
-			}
-			if (el.src){
-				html.setAttribute("src", el.src);
-			}
-			if (el.href){
-				html.setAttribute("href", el.href);
-			}
-			return html;
+	        this.markUp = data;
 
-		});
-
-		this.markUp = result;
-		return result;
-
-	},
-	render: function(){
-		this.work();
-		this.view.render(this.markUp);
-	},
-	markUp: [],
-
+        });
+    },
+    render: function() {
+        this.work().then(() => {
+        this.view.render(this.markUp);
+    })
+    },
+    markUp: []
 };
+// function trispile(el) {
+//     let html;
 
-/* harmony default export */ __webpack_exports__["a"] = (controller); 
+//     if (el && el.body && el.tag) {
+
+//         html = document.createElement("div");
+
+//         if (typeof el.body === "object") {
+
+//             if (el.body.length) {
+//                 el.body.map(trispile).forEach(element => {
+//                 	html.appendChild(element)
+//                 });
+//             } else {
+//                 html.appendChild(trispile(el.body));
+//             }
+//         } else {
+//             html.innerHTML = el.body;
+//         }
+//         if (el.src) {
+//             html.setAttribute("src", el.src);
+//         }
+//         if (el.href) {
+//             html.setAttribute("href", el.href);
+//         }
+//         if (el.class) {
+//             html.classList.add(el.class);
+//         }
+//         if (el.id) {
+//             html.setAttribute("id", el.id);
+//         }
+
+//     }    
+
+//     return html ? html : el;
+// }
+
+
+/* harmony default export */ __webpack_exports__["a"] = (controller);
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// export default {
-//     data: [
-//         { tag: "h1", body: "Анкета Михаила Пилипенка" },
-//         { tag: "a", body: "<img src=\"assets\/img\/1.jpg\">", href: "https://www.facebook.com/musicvyp" },
-//         { tag: "a", body: "Страница с блоками", href: "./posts.html" },
-//         { tag: "ul", body: "По пунктам" },
-//         { tag: "li", body: "Коротко обо мнеМеня зовут Михаил Пилипенко. Мне 28 лет. Закончил обучение в школе. Потом в КНЕУ им. В. Гетьмана по специальности экономики предприятия, чем ни капли не горжусь. С 2012 года и по сей день работаю в государственном предприятии \"Энергоатом\"." },
-//         { tag: "li", body: "Идеалист, романтик - ужасное сочетание, так как их сочетание вызывает много противоречий, что часто похоже на забуксовавший автомобиль. Понятие \"романтик\" в моем понимании может отличаться от общепринятого. Об этом можно поговорить при личных встречах. Я вообще люблю говорить о себе. Вот, помню, однажды..." },
-//         { tag: "li", body: "Ценю в людях чувство юмора. При верстке люблю обращать особое внимание незначительным мелочам, но которые создают первое впечатление о сайте. Хочу научиться оптимизировать свой код и находить более быстрые и практичные решения. Заинтересовал JavaScript и хочу совершенствовать навыки использования. Стремлюсь сменить место работы, быть полезным и находить нестандартные, но эффективные решения каких-либо задач. Всегда рад новым знакомствам, дельным советам, общению." }
-//     ]
-// }
+"use strict";
+let store;
+/* harmony default export */ __webpack_exports__["a"] = (store = {
+
+    data: [],
+    init: function(url = "https://jsonplaceholder.typicode.com/posts") {
+        return fetch(url).then( response => response.json())
+
+        	.then( json => store.data = json );
+
+        }
+    });
+  // data: [
+    //     { tag: "div", body: "Все примеры, которые мы приводили выше, были построены с учетом однострочного (одностолбцового) расположения блоков. Надо сказать, что по умолчанию flex-контейнер всегда будет располагать блоки внутри себя в одну линию. Однако, спецификацией также поддерживается многострочный режим. За многострочность внутри flex-контейнера отвечает CSS свойство flex-wrap.", class: "block__small" },
+    //     { tag: "div", body: "Block 2", class: "block__small" },
+    //     { tag: "div", body: "Block 3", class: "block__small" },
+    //     { tag: "div", body: "Block 4", class: "block__small" },
+    //     { tag: "div", body: "Я думаю, что flexbox, конечно же, не вытеснит все остальные способы верстки, но, безусловно, в ближайшее время займет достойную нишу при решении огромного количества задач. И уж точно, пробовать работать с ним нужно уже сейчас. Одна из следующих статей будет посвящена конкретным примерам работы с flex-версткой. Подписывайтесь на новости ;)", class: "block__small" },
+    //     { tag: "div", body: "Block 6", class: "block__small" },
+    //     { tag: "div", body: "Block 7", class: "block__small" },
+    //     { tag: "div", body: "Block 8", class: "block__small" },
+    //     { tag: "div", body: "Block 9", class: "block__small" },
+    //     { tag: "div", body: "Задает изначальный размер по главной оси для flex-блока до того, как к нему будут применены преобразования, основанные на других flex-факторах. Может быть задан в любых единицах измерения длинны (px, em, %, …) или auto(по умолчанию). Если задан как auto – за основу берутся размеры блока (width, height), которые, в свою очередь, могут зависеть от размера контента, если не указанны явно.", class: "block__long" },
+    //     { tag: "div", body: "Block 11", class: "block__long" },
+    // ],
 
 /***/ }),
 /* 8 */
@@ -875,13 +948,26 @@ let controller = {
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
     render: function(data) {
-        var body = document.getElementsByTagName("body")[0];
-        data.forEach(function(el) {
-            body.appendChild(el);
+        var body = document.getElementsByClassName("block__main_content")[0];
+
+        data.map(el => {
+        	let box = document.createElement("div");
+        	let title = document.createElement("h3");
+        	let text = document.createElement("p");
+        	title.innerHTML = el.title;
+        	text.innerHTML = el.body;
+        	box.appendChild(title);
+        	box.appendChild(text);
+        	box.classList.add("block__small");
+        	return box;
+        }).forEach(el => {
+        	body.appendChild(el);
+
         });
-        console.log(data);
+ 
     }
 });
+
 
 /***/ })
 /******/ ]);
