@@ -20,6 +20,6 @@
     "css-loader": "^0.28.9",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.1"
+    "style-loader": "^0.20.2"
   }
 }
