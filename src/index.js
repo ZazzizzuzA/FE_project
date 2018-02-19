@@ -1,8 +1,44 @@
 import './styles/styles.scss';
+import './controllers/clickerCtrl.js';
+import Vue from "vue/dist/vue.min.js";
+
+new Vue ({
+	el: "#app",
+	data: {
+		message: "Hello, I'm Vue. Welcome to my world of pain.",
+	},
+});
+new Vue ({
+	el: "#clicker",
+	data: {
+		commande: "Start",
+		counter: 0,
+		isactive: false
+	},
+	methods: {
+		onClick: function() {
+			this.commande = "!!!PUSH!!!";
+			this.counter += 1;
+			// if (this.isactive) {
+
+			// } else {
+			// 	this.isactive = true;
+			// 	setTimeout(function() {
+			// 		this.isactive = false;
+			// 		this.commande = "Start";
+			// 		this.counter = 0;
+			// 		// alert("stop");
+			// 	}, 10000)
+			// }
+		}
+	},
+})
 
 import ctrl from "./controllers/builderCtrl.js";
 
 ctrl.render();
+
+
 
 // var head = document.createElement('header');
 // var article = document.createElement('article');

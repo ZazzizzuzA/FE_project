@@ -11,12 +11,14 @@
     <header class="block__head">
         <img src="https://i.pinimg.com/564x/82/23/e6/8223e697e30d76a1139a7ae48306d5b3.jpg" class="block__head_logo">
         <h1>Весь проэкт</h1>
-        <div>Здесь может находиться еще какая-нибудь информация. Неожиданно? Хо-хо! То ли еще будет...</div>
-
+        <div id="app">
+            <p>{{message}}</p>
+            <input type="text" v-model="message">
+        </div>
     </header>
     <div class="block__sidebar">
         <div class="block__sidebar_profile">
-            <img src="assets/img/1.jpg" alt="photo">
+            <img src="./assets/img/1.jpg" alt="photo">
             <h4>Pylypenko Mykhailo</h4>
             <h5>Frontend Developer</h5>
             <div class="block__sidebar_profile-icons icons-stats">
@@ -37,29 +39,21 @@
             <button>Support</button>
         </div>
     </div>
-
     <div class="block__main">
+        <div class="block__main_clicker" id="clicker">
+            <input type="text" id="clickerInput" v-model="counter">
+            <button id="clickerButton" v-on:click="onClick">{{commande}}</button>
+        </div>
         <div class="block__main_title">
-
             <h1><i class="fa fa-home" aria-hidden="true"></i> Dashboard</h1>
             <div>Today</div>
             <div>Yesterday</div>
             <div><i class="fa fa-calendar-check-o" aria-hidden="true"></i> February 26, 2018</div>
-
         </div>
         <div class="block__main_content" id="content"></div>
-        <div class="block__main_clicker">
-            <input type="" name="" id="clickerInput" >
-            <button id="clickerButton">Начать</button>
-        </div>
+
     </div>
-
-
-    <script type="text/javascript" src="build/main.js"></script>
-    <!-- <script type="text/javascript" src="build/posts.js"></script> -->
-    <script type="text/javascript" src="src/controllers/clickerCtrl.js"></script>
-
-
+    
 </body>
 
 </html>
