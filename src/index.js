@@ -2,36 +2,61 @@ import './styles/styles.scss';
 import './controllers/clickerCtrl.js';
 import Vue from "vue/dist/vue.min.js";
 
-new Vue ({
-	el: "#app",
-	data: {
-		message: "Hello, I'm Vue. Welcome to my world of pain.",
-	},
+new Vue({
+    el: "#app",
+    data: {
+        message: "Hello, I'm Vue. Welcome to my world of pain.",
+    },
 });
-new Vue ({
-	el: "#clicker",
-	data: {
-		commande: "Start",
-		counter: 0,
-		isactive: false
-	},
-	methods: {
-		onClick: function() {
-			this.commande = "!!!PUSH!!!";
-			this.counter += 1;
-			// if (this.isactive) {
+new Vue({
+    el: "#clicker",
+    data: {
+        commande: "Start",
+        counter: 0,
+    },
+    methods: {
+        onClick: function() {
+            this.commande = "!!!PUSH!!!"
+            this.counter += 1
+            if (this.counter == 1) {
+                setTimeout(() => {
+                    alert("Stop! You've got: " + this.counter)
+                    this.counter = 0
+                    this.commande = "Start"
+                }, 10000)
+            }
+        },
+    },
+})
+new Vue({
+    el: "#toDoList",
+    data: {
+        messageButton: "Добавить дело",
+        messageDeal: "Дела",
+        todo: "Do something",
+        deals: [{
+                text: "Доделать кликер с \"оттяжечкой\"",
+                status: true
+            },
+            {
+                text: "Попрыгать от радости",
+                status: true
+            },
+            {
+                text: "Сделать to-Do-List",
+                status: false
+            }
+        ]
+    },
+    methods: {
+        addDeal: function() {
 
-			// } else {
-			// 	this.isactive = true;
-			// 	setTimeout(function() {
-			// 		this.isactive = false;
-			// 		this.commande = "Start";
-			// 		this.counter = 0;
-			// 		// alert("stop");
-			// 	}, 10000)
-			// }
-		}
-	},
+            this.deals.push({
+                text: this.todo,
+                status: false
+            })
+        }
+    }
 })
 
 import ctrl from "./controllers/builderCtrl.js";

@@ -75,7 +75,6 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
-
         button {
             color: $first_white;
             border-style: none;
@@ -127,7 +126,6 @@ body {
     flex-flow: row wrap;
     .block__main_title {
         display: flex;
-       
         align-items: center;
         justify-content: space-between;
         width: 100%;
@@ -175,4 +173,9 @@ body {
             box-sizing: border-box;
         }
     }
+}
+
+.deal-done {
+    text-decoration: line-through;
+    opacity: 0.6;
 }
