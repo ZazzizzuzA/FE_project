@@ -14,6 +14,7 @@ $purple_bg: #CE93D8;
 $pink_bg: #F48FB1;
 $green_bg: #A5D6A7;
 $blue_bg: rgb(79, 110, 247);
+$bg_list: rgb(255, 143, 143);
 @mixin margin($vertical, $horizontal) {
     margin: $vertical $horizontal;
 }

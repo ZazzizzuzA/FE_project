@@ -54,9 +54,9 @@
         <div id="toDoList">
             <input type="text" v-model="todo">
             <button @click="addDeal">{{messageButton}}</button>
-            <p>{{messageDeal}}</p>
+            <h4>{{messageDeal}}</h4>
             <ul>
-                <li v-for="deal in deals" :class="{'deal-done': deal.status}">{{deal.text}}</li>
+                <li v-for="deal in deals" :class="{'deal-done': deal.status}">{{deal.text}}<input type="checkbox" v-model="deal.mark" @click="deal.status = !deal.status"></li>
             </ul>
         </div>
         <div class="block__main_content" id="content"></div>

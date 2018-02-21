@@ -32,31 +32,36 @@ new Vue({
     el: "#toDoList",
     data: {
         messageButton: "Добавить дело",
-        messageDeal: "Дела",
+        messageDeal: "Дела на \"бумаге\"",
         todo: "Do something",
         deals: [{
                 text: "Доделать кликер с \"оттяжечкой\"",
-                status: true
+                status: true,
+                mark: "checked"
             },
             {
                 text: "Попрыгать от радости",
-                status: true
+                status: true,
+                mark: "checked"
             },
             {
                 text: "Сделать to-Do-List",
-                status: false
+                status: false,
+                mark: "",
             }
         ]
     },
     methods: {
         addDeal: function() {
-
             this.deals.push({
                 text: this.todo,
-                status: false
+                status: false,
+                mark: ""
             })
+
         }
     }
+
 })
 
 import ctrl from "./controllers/builderCtrl.js";

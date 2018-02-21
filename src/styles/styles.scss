@@ -177,5 +177,24 @@ body {
 
 .deal-done {
     text-decoration: line-through;
+    color: $indigo;
     opacity: 0.6;
+}
+
+#toDoList {
+    @include padding(15px, 15px);
+    @include margin(15px, 0px);
+    background-color: $bg_list;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 1.4em;
+    ul {
+        list-style-type: none;
+        column-width: 200px;
+        column-count: 3;
+        column-gap: normal;
+        column-rule: 1px solid #ccc;
+        font-size: 20px;
+    }
 }
