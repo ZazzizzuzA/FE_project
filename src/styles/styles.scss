@@ -1,5 +1,6 @@
 @import '_var.scss';
 @import '_reset.scss';
+
 .interface {
     background-color: #BDBDBD;
     @include margin(10px, 15px);
@@ -41,7 +42,7 @@ body {
 .block__sidebar {
     display: flex;
     flex-direction: column;
-    background-color: $blue_bg;
+    background: $grad_blue;
     color: $first_white;
     width: 20%;
     box-sizing: border-box;
@@ -162,8 +163,9 @@ body {
             text-align: center;
         }
         .block__small {
+            color: $first_white;
             @include padding(10px, 10px);
-            background-color: $red;
+            background: $grad_red;
             width: 30%;
         }
         .block__long {
@@ -172,29 +174,5 @@ body {
             background-color: $lime;
             box-sizing: border-box;
         }
-    }
-}
-
-.deal-done {
-    text-decoration: line-through;
-    color: $indigo;
-    opacity: 0.6;
-}
-
-#toDoList {
-    @include padding(15px, 15px);
-    @include margin(15px, 0px);
-    background-color: $bg_list;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-size: 1.4em;
-    ul {
-        list-style-type: none;
-        column-width: 200px;
-        column-count: 3;
-        column-gap: normal;
-        column-rule: 1px solid #ccc;
-        font-size: 20px;
     }
 }

@@ -8,13 +8,14 @@
 </head>
 
 <body>
+
     <header class="block__head">
         <img src="https://i.pinimg.com/564x/82/23/e6/8223e697e30d76a1139a7ae48306d5b3.jpg" class="block__head_logo">
         <h1>Весь проэкт</h1>
-        <div id="app">
+        <!-- <div id="app">
             <p>{{message}}</p>
             <input type="text" v-model="message">
-        </div>
+        </div> -->
     </header>
     <div class="block__sidebar">
         <div class="block__sidebar_profile">
@@ -40,25 +41,26 @@
         </div>
     </div>
     <div class="block__main">
-        <div class="block__main_clicker" id="clicker">
+        <!-- <div class="block__main_clicker" id="clicker">
             <input type="text" id="clickerInput" v-model="counter">
             <button id="clickerButton" @click="onClick">{{commande}}</button>
-        </div>
+        </div> -->
         <div class="block__main_title">
             <h1><i class="fa fa-home" aria-hidden="true"></i> Dashboard</h1>
             <div>Today</div>
             <div>Yesterday</div>
             <div><i class="fa fa-calendar-check-o" aria-hidden="true"></i> February 26, 2018</div>
         </div>
-
-        <div id="toDoList">
-            <input type="text" v-model="todo">
+        <div id="applications">
+        </div>
+<!--         <div id="toDoList">
+            <input type="text" v-model="todo" @keyup.13="addDeal">
             <button @click="addDeal">{{messageButton}}</button>
             <h4>{{messageDeal}}</h4>
             <ul>
-                <li v-for="deal in deals" :class="{'deal-done': deal.status}">{{deal.text}}<input type="checkbox" v-model="deal.mark" @click="deal.status = !deal.status"></li>
+                <li v-for="deal in deals" :class="{'deal-done': deal.status}" v-if="deal.show"><input type="checkbox" v-model="deal.mark" @click="deal.status = !deal.status">{{deal.text}}<button @click="deal.show = !deal.show"><i class="fa fa-times" aria-hidden="true"></i></button></li>
             </ul>
-        </div>
+        </div> -->
         <div class="block__main_content" id="content"></div>
 
     </div>

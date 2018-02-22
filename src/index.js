@@ -1,72 +1,93 @@
-import './styles/styles.scss';
-import './controllers/clickerCtrl.js';
-import Vue from "vue/dist/vue.min.js";
-
-new Vue({
-    el: "#app",
-    data: {
-        message: "Hello, I'm Vue. Welcome to my world of pain.",
-    },
-});
-new Vue({
-    el: "#clicker",
-    data: {
-        commande: "Start",
-        counter: 0,
-    },
-    methods: {
-        onClick: function() {
-            this.commande = "!!!PUSH!!!"
-            this.counter += 1
-            if (this.counter == 1) {
-                setTimeout(() => {
-                    alert("Stop! You've got: " + this.counter)
-                    this.counter = 0
-                    this.commande = "Start"
-                }, 10000)
-            }
-        },
-    },
-})
-new Vue({
-    el: "#toDoList",
-    data: {
-        messageButton: "Добавить дело",
-        messageDeal: "Дела на \"бумаге\"",
-        todo: "Do something",
-        deals: [{
-                text: "Доделать кликер с \"оттяжечкой\"",
-                status: true,
-                mark: "checked"
-            },
-            {
-                text: "Попрыгать от радости",
-                status: true,
-                mark: "checked"
-            },
-            {
-                text: "Сделать to-Do-List",
-                status: false,
-                mark: "",
-            }
-        ]
-    },
-    methods: {
-        addDeal: function() {
-            this.deals.push({
-                text: this.todo,
-                status: false,
-                mark: ""
-            })
-
-        }
-    }
-
-})
-
 import ctrl from "./controllers/builderCtrl.js";
+import './styles/styles.scss';
+import Vue from "vue/dist/vue.min.js";
+import toDo from "./modules/todo.vue";
+import clicker from "./modules/clicker.vue";
+import pugTest from "./modules/pugTest.vue";
+
+
+
+new Vue({
+    el: "#applications",
+    template: '<div style="width: 100%"><todo/> <clicker/> <pug/> </div>',
+    components: {
+        todo: toDo,
+        clicker: clicker,
+        pug: pugTest
+    }
+});
 
 ctrl.render();
+
+// new Vue({
+//     el: "#app",
+//     data: {
+//         message: "Hello, I'm Vue. Welcome to my world of pain.",
+//     },
+// });
+// new Vue({
+//     el: "#clicker",
+//     data: {
+//         commande: "Start",
+//         counter: 0,
+//     },
+//     methods: {
+//         onClick: function() {
+//             this.commande = "!!!PUSH!!!"
+//             this.counter += 1
+//             if (this.counter == 1) {
+//                 setTimeout(() => {
+//                     alert("Stop! You've got: " + this.counter)
+//                     this.counter = 0
+//                     this.commande = "Start"
+//                 }, 10000)
+//             }
+//         },
+//     },
+// })
+// new Vue({
+//     el: "#toDoList",
+//     data: {
+//         messageButton: "Добавить дело",
+//         messageDeal: "Дела на \"бумаге\"",
+//         todo: "Do something",
+//         deals: [{
+//                 text: "Доделать кликер с \"оттяжечкой\"",
+//                 status: true,
+//                 mark: "checked",
+//                 show: true,
+                
+//             },
+//             {
+//                 text: "Попрыгать от радости",
+//                 status: true,
+//                 mark: "checked",
+//                 show: true,
+                
+//             },
+//             {
+//                 text: "Сделать to-Do-List",
+//                 status: false,
+//                 mark: "",
+//                 show: true,
+               
+//             }
+//         ]
+//     },
+//     methods: {
+//         addDeal: function() {
+//             this.deals.push({
+//                 text: this.todo,
+//                 status: false,
+//                 mark: "",
+//                 show: true,
+                
+//             })
+//         }
+//     }
+// })
+
+
 
 
 

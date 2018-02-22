@@ -43,7 +43,7 @@ let controller = {
     view,
     work: function() {
         let result = [];
-        return this.model.init().then(() => {
+        return this.model.init().then( () => {
 	 		let data = this.model.data;
 	        // result = data.map(trispile);
 
@@ -52,12 +52,15 @@ let controller = {
         });
     },
     render: function() {
-        this.work().then(() => {
+        this.work().then( () => {
         this.view.render(this.markUp);
     })
     },
     markUp: []
 };
+
+export default controller;
+
 // function trispile(el) {
 //     let html;
 
@@ -95,5 +98,4 @@ let controller = {
 //     return html ? html : el;
 // }
 
-
-export default controller;
+// export default controller;

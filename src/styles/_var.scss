@@ -15,6 +15,10 @@ $pink_bg: #F48FB1;
 $green_bg: #A5D6A7;
 $blue_bg: rgb(79, 110, 247);
 $bg_list: rgb(255, 143, 143);
+$warn_red: #D50000;
+$grad_red: linear-gradient(to top right, #3949AB, #EF5350, #2E7D32);
+$grad_blue: linear-gradient(to bottom, #1565C0, #FFEE58, #1565C0, #FFEE58, #1565C0, #FFEE58);
+
 @mixin margin($vertical, $horizontal) {
     margin: $vertical $horizontal;
 }

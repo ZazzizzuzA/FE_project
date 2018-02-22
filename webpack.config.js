@@ -15,9 +15,9 @@ module.exports = {
     module: {
         rules: [{
                 test: /\.css$/,
-                use: [{
-                    loader: "css-loader",
-                }]
+                use: [
+                    { loader: "css-loader" }
+                ]
             },
             {
                 test: /\.scss$/,
@@ -26,7 +26,13 @@ module.exports = {
                     { loader: "css-loader" },
                     { loader: "sass-loader" }
                 ]
-            }
+            },
+            {
+                test: /\.vue$/,
+                use: [
+                    { loader: "vue-loader" }
+                ]
+            },
         ]
     },
     devServer: {
