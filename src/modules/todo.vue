@@ -1,13 +1,17 @@
 
-<template>
-	<div id="toDoList">
-        <input type="text" v-model="todo" @keyup.13="addDeal">
-        <button @click="addDeal">{{messageButton}}</button>
-        <h4>{{messageDeal}}</h4>
-        <ul>
-            <li v-for="deal in deals" :class="{'deal-done': deal.status}" v-if="deal.show"><input type="checkbox" v-model="deal.mark" @click="deal.status = !deal.status">{{deal.text}}<button @click="deal.show = !deal.show"><i class="fa fa-times" aria-hidden="true"></i></button></li>
-        </ul>
-    </div>
+<template lang="pug">
+
+    div#toDoList
+        input(type="text" v-model="todo" @keyup.13="addDeal")
+        button(@click="addDeal") {{messageButton}}
+        h4 {{messageDeal}}
+        ul
+            li(v-for="deal in deals" :class="{'deal-done': deal.status}" v-if="deal.show") {{deal.text}}
+                input(type="checkbox" v-model="deal.mark" @click="deal.status = !deal.status") 
+                    
+                button(@click="deal.show = !deal.show")
+                    <i class="fa fa-times" aria-hidden="true"></i>       
+
 </template>
 
 <script>
