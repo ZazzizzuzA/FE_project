@@ -1,23 +1,26 @@
-import ctrl from "./controllers/builderCtrl.js";
+// import ctrl from "./controllers/builderCtrl.js";
 import './styles/styles.scss';
 import Vue from "vue/dist/vue.min.js";
 import toDo from "./modules/todo.vue";
 import clicker from "./modules/clicker.vue";
 import pugTest from "./modules/pugTest.vue";
+import posts from "./modules/posts.vue";
+import VueResource from "vue-resource";
 
-
+Vue.use(VueResource)
 
 new Vue({
     el: "#applications",
-    template: '<div style="width: 100%"><todo/> <clicker/> <pug/> </div>',
+    template: '<div style="width: 100%"> <todo/> <clicker/> <pug/> <posts/> </div>',
     components: {
         todo: toDo,
         clicker: clicker,
-        pug: pugTest
+        pug: pugTest,
+        posts: posts
     }
 });
 
-ctrl.render();
+// ctrl.render();
 
 // new Vue({
 //     el: "#app",
@@ -56,21 +59,21 @@ ctrl.render();
 //                 status: true,
 //                 mark: "checked",
 //                 show: true,
-                
+
 //             },
 //             {
 //                 text: "Попрыгать от радости",
 //                 status: true,
 //                 mark: "checked",
 //                 show: true,
-                
+
 //             },
 //             {
 //                 text: "Сделать to-Do-List",
 //                 status: false,
 //                 mark: "",
 //                 show: true,
-               
+
 //             }
 //         ]
 //     },
@@ -81,7 +84,7 @@ ctrl.render();
 //                 status: false,
 //                 mark: "",
 //                 show: true,
-                
+
 //             })
 //         }
 //     }

@@ -12,8 +12,8 @@
 	export default {
 	    data() {
 	    	return {
-	        command: "Start",
-	        counter: 0
+	        	command: "Start",
+	        	counter: 0
 	    }
 	},
 	    methods: {
