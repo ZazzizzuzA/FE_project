@@ -2,7 +2,7 @@
 	
     div.block__profile#profile
         div.profile_photo
-            img(src="http://images.entertainment.ie/images_content/rectangle/620x372/E-T.jpg" alt="photo")
+            img(src="assets/img/E-T.jpg" alt="photo")
             a.profile_link(type="button" href="https://github.com/ZazzizzuzA/FE_project" target="_blink") {{link.text}}        
         div.profile_info
             h3 {{name}} {{soname}}
@@ -95,13 +95,35 @@ export default {
 @import '../styles/_var.scss';
 @import '../styles/_reset.scss';
 
+@font-face {
+    font-family: 'Fredericka the Great';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../build/assets/fonts/FrederickatheGreat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../build/assets/fonts/SpecialElite-Regular.ttf');
+}
+@font-face {
+    font-family: 'LibreBaskerville-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../build/assets/fonts/LibreBaskerville-Regular.ttf');
+}
+
+
 .block__profile{
     display: flex;
     flex-flow: row nowrap;
     width: 70%;
     border-radius: 10px;
     margin: auto;
-    background-color: $bg_profile;
+    background-image: url("https://image.freepik.com/free-vector/grey-square-pattern-background-vector-illustration_1164-1350.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
     .profile_photo{
         text-align: center;
@@ -118,24 +140,31 @@ export default {
         a{
             @include padding(10px, 10px);
             text-decoration: none;
-            border: 1px solid $green_bg;
             width: 30%;
             border-radius: 5px;
-            color: $indigo;
-            background-color: $blue;
+            color: #EEEEEE;
+            background-color: #616161;
+            letter-spacing: 1px;
+            box-shadow: 7px 7px 10px 2px #424242;
+            font-family: 'Fredericka the Great', cursive;
         }
     }
     .profile_info{
         @include padding(10px, 10px);
         display: flex;
         flex-flow: row wrap;
-        box-shadow: -5px 0px 4px $green_bg;
+        box-shadow: -5px 0px 4px #90A4AE;
         flex: 1 0 60%;    
         box-sizing: border-box;
             
         h3{
             @include margin(0px, 0px);
+            color: #424242;
+            letter-spacing: 2px;
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 1.5em;
             flex: 1 0 100%;
+            text-shadow: 10px 0px 50px #424242;
             cursor: default;
             
         }        
@@ -145,13 +174,15 @@ export default {
             margin: 0px 0px 0px 0px;
             flex: 1 0 100%;
             cursor: default;
-            
+            font-family: 'Libre Baskerville', serif;
+
         }
         .profile_job{
             font-size: 0.9em;
             margin: 0px 0px 10px 0px;
             flex: 1 0 100%;
             cursor: default;
+            font-family: 'Libre Baskerville', serif;
             
         }
         .profile_questions{
@@ -159,6 +190,8 @@ export default {
             flex-flow: column wrap;
             box-sizing: border-box;
             width: 30%;
+            font-family: 'Special Elite', cursive;
+            font-size: 1.2em;
             p {
                 margin: 0px 0px 20px 0px;
                 cursor: default;
@@ -172,6 +205,8 @@ export default {
             box-sizing: border-box;
             width: 70%;
             border-left: 1px groove rgba(165, 214, 167, 0.356);
+            font-family: 'Special Elite', cursive;
+            font-size: 1.2em;
             p {
                 margin: 0px 0px 20px 0px;
                 cursor: default;
