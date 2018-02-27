@@ -2,7 +2,7 @@
 	
     div.block__profile#profile
         div.profile_photo
-            img(src="assets/img/E-T.jpg" alt="photo")
+            img#imgimg(src="assets/img/E-T.jpg" alt="photo")
             a.profile_link(type="button" href="https://github.com/ZazzizzuzA/FE_project" target="_blink") {{link.text}}        
         div.profile_info
             h3 {{name}} {{soname}}
@@ -60,7 +60,7 @@ export default {
                     show: true                    
                 },
                 {
-                    text: "18.01.1990",
+                    text: "XVIII.I.XIXXC",
                     show: true                    
                 },
                 {
@@ -86,6 +86,9 @@ export default {
         changeInfo: function(value) {
             this.show = !this.show
         }
+    },
+    mounted() {
+        
     }
 }
 	
@@ -140,7 +143,7 @@ export default {
         a{
             @include padding(10px, 10px);
             text-decoration: none;
-            width: 30%;
+            width: 35%;
             border-radius: 5px;
             color: #EEEEEE;
             background-color: #616161;
