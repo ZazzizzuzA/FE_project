@@ -6,7 +6,7 @@
 		input#fileInput2(type="file")
 		img#picture(v-bind:src="image.src")
 		input#fileInputCanvas(type="file" )
-		canvas#can(@click="canva")
+		canvas#can
 </template>
 
 <script>
@@ -21,14 +21,7 @@
 				}
 			}
 		},
-		methods: {
-			// canva() {
-			// 	let canvas = document.getElementById("can"),
-			// 		ctx = canvas.getContext('2d'),
-			// 		picture = document.getElementById('picture');					
-			// 	return ctx.drawImage(picture, 0, 0, 200, 150);
-			// }
-		},
+
 		mounted() {
 			
 				let	input = document.getElementById("fileInput"),
@@ -36,10 +29,11 @@
 					inputCanvas = document.getElementById("fileInputCanvas"),
 					canvas = document.getElementById("can"),
 					ctx = canvas.getContext('2d'),
-					nn = new Image(),
+					canImg = new Image(),
 					output = this.file,
 					outputImg = this.image;
-
+					canImg.setAttribute("v-model", this.image.srcCanvas);
+	
 					input.onchange = function() {
 						let list = this.files,
 							doc = list[0],
@@ -69,12 +63,12 @@
 
 						reader.onload = function(event) {
 							let text = event.target.result;
-							outputImg.srcCanvas = text;
-							nn.setAttribute("src", outputImg.srcCanvas);						
-						}									
+							outputImg.srcCanvas = text;	
+							canImg.setAttribute("src", outputImg.srcCanvas);
+																	
+						}						
 						reader.readAsDataURL(doc);
-						
-						ctx.drawImage(nn, 0, 0, 200, 150);
+						setTimeout( () => {ctx.drawImage(canImg, 0, 0, 300, 150)}, 100);
 					}
 		}
 	}
