@@ -149,29 +149,23 @@
                 text-align: left;
             }
         }
-        //     .block__main_content {
-        //         @include padding(20px, 0px);
-        //         display: flex;
-        //         flex-flow: row wrap;
-        //         width: 100%;
-        //         align-content: space-around;
-        //         justify-content: space-between;
-        //         div {
-        //             @include margin(10px, 0px);
-        //             border: 1px solid rgb(0, 34, 128);
-        //             text-align: center;
-        //         }
-        //         .block__small {
-        //             color: $first_white;
-        //             @include padding(10px, 10px);
-        //             background: $grad_red;
-        //             width: 30%;
-        //         }
-        //         .block__long {
-        //             @include padding(10px, 10px);
-        //             flex: 1 0 100%;
-        //             background-color: $lime;
-        //             box-sizing: border-box;
-        //         }
-        //     }
+    }
+    .block__router{
+    width: 100%;
+    box-sizing: border-box;
+    @include padding( 20px, 5px );
+    @include margin( 20px, 0px );
+
+
+
+        .router_link{
+            display: inline-block;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: $yellow;
+            @include padding( 15px, 40px );
+            @include margin( 20px, 0px );
+            background: $purple;
+            border-radius: 3px;
+        }
     }

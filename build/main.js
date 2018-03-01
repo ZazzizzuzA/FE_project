@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9f02edbd12a785cf9bab"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9465a12474f67046898b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -9431,7 +9431,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\nhtml,\nbody,\nul,\nol {\n  margin: 0;\n  padding: 0;\n  font-size: 16px;\n}\n@font-face {\n  font-family: 'Fredericka the Great';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(43)) + ");\n}\n@font-face {\n  font-family: 'Special Elite';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(44)) + ");\n}\n@font-face {\n  font-family: 'LibreBaskerville-Regular';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(45)) + ");\n}\n.block__profile {\n  display: flex;\n  flex-flow: row nowrap;\n  width: 70%;\n  border-radius: 10px;\n  margin: auto;\n  background-image: url(\"https://image.freepik.com/free-vector/grey-square-pattern-background-vector-illustration_1164-1350.jpg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  box-sizing: border-box;\n}\n.block__profile .profile_photo {\n    text-align: center;\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: space-around;\n    width: 40%;\n    align-items: center;\n}\n.block__profile .profile_photo img {\n      width: 250px;\n      height: 200px;\n      border-radius: 50%;\n}\n.block__profile .profile_photo a {\n      padding: 10px 10px;\n      text-decoration: none;\n      width: 35%;\n      border-radius: 5px;\n      color: #EEEEEE;\n      background-color: #616161;\n      letter-spacing: 1px;\n      box-shadow: 7px 7px 10px 2px #424242;\n      font-family: 'Fredericka the Great', cursive;\n}\n.block__profile .profile_info {\n    padding: 10px 10px;\n    display: flex;\n    flex-flow: row wrap;\n    box-shadow: -5px 0px 4px #90A4AE;\n    flex: 1 0 60%;\n    box-sizing: border-box;\n}\n.block__profile .profile_info h3 {\n      margin: 0px 0px;\n      color: #424242;\n      letter-spacing: 2px;\n      font-family: 'Fredericka the Great', cursive;\n      font-size: 1.5em;\n      flex: 1 0 100%;\n      text-shadow: 10px 0px 50px #424242;\n      cursor: default;\n}\n.block__profile .profile_info .profile_location {\n      font-size: 0.6em;\n      font-weight: 400;\n      margin: 0px 0px 0px 0px;\n      flex: 1 0 100%;\n      cursor: default;\n      font-family: 'Libre Baskerville', serif;\n}\n.block__profile .profile_info .profile_job {\n      font-size: 0.9em;\n      margin: 0px 0px 10px 0px;\n      flex: 1 0 100%;\n      cursor: default;\n      font-family: 'Libre Baskerville', serif;\n}\n.block__profile .profile_info .profile_questions {\n      display: flex;\n      flex-flow: column wrap;\n      box-sizing: border-box;\n      width: 30%;\n      font-family: 'Special Elite', cursive;\n      font-size: 1.2em;\n}\n.block__profile .profile_info .profile_questions p {\n        margin: 0px 0px 20px 0px;\n        cursor: default;\n        text-shadow: 3px 2px 3px;\n}\n.block__profile .profile_info .profile_answers {\n      padding: 0px 10px;\n      display: flex;\n      flex-flow: column wrap;\n      box-sizing: border-box;\n      width: 70%;\n      border-left: 1px groove rgba(165, 214, 167, 0.356);\n      font-family: 'Special Elite', cursive;\n      font-size: 1.2em;\n}\n.block__profile .profile_info .profile_answers p {\n        margin: 0px 0px 20px 0px;\n        cursor: default;\n}\n.block__profile .profile_info .profile_answers p:hover {\n        cursor: pointer;\n        text-decoration: underline;\n}\n.block__profile .profile_info .profile_answers input {\n        height: 18px;\n        margin-bottom: 20px;\n}\n", ""]);
+exports.push([module.i, "\nhtml,\nbody,\nul,\nol {\n  margin: 0;\n  padding: 0;\n  font-size: 16px;\n}\n@font-face {\n  font-family: 'Fredericka the Great';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../build/assets/fonts/FrederickatheGreat-Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n}\n@font-face {\n  font-family: 'Special Elite';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../build/assets/fonts/SpecialElite-Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n}\n@font-face {\n  font-family: 'LibreBaskerville-Regular';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../build/assets/fonts/LibreBaskerville-Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");\n}\n.block__profile {\n  display: flex;\n  flex-flow: row nowrap;\n  width: 70%;\n  border-radius: 10px;\n  margin: auto;\n  background-image: url(\"https://image.freepik.com/free-vector/grey-square-pattern-background-vector-illustration_1164-1350.jpg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  box-sizing: border-box;\n}\n.block__profile .profile_photo {\n    text-align: center;\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: space-around;\n    width: 40%;\n    align-items: center;\n}\n.block__profile .profile_photo img {\n      width: 250px;\n      height: 200px;\n      border-radius: 50%;\n}\n.block__profile .profile_photo a {\n      padding: 10px 10px;\n      text-decoration: none;\n      width: 35%;\n      border-radius: 5px;\n      color: #EEEEEE;\n      background-color: #616161;\n      letter-spacing: 1px;\n      box-shadow: 7px 7px 10px 2px #424242;\n      font-family: 'Fredericka the Great', cursive;\n}\n.block__profile .profile_info {\n    padding: 10px 10px;\n    display: flex;\n    flex-flow: row wrap;\n    box-shadow: -5px 0px 4px #90A4AE;\n    flex: 1 0 60%;\n    box-sizing: border-box;\n}\n.block__profile .profile_info h3 {\n      margin: 0px 0px;\n      color: #424242;\n      letter-spacing: 2px;\n      font-family: 'Fredericka the Great', cursive;\n      font-size: 1.5em;\n      flex: 1 0 100%;\n      text-shadow: 10px 0px 50px #424242;\n      cursor: default;\n}\n.block__profile .profile_info .profile_location {\n      font-size: 0.6em;\n      font-weight: 400;\n      margin: 0px 0px 0px 0px;\n      flex: 1 0 100%;\n      cursor: default;\n      font-family: 'Libre Baskerville', serif;\n}\n.block__profile .profile_info .profile_job {\n      font-size: 0.9em;\n      margin: 0px 0px 10px 0px;\n      flex: 1 0 100%;\n      cursor: default;\n      font-family: 'Libre Baskerville', serif;\n}\n.block__profile .profile_info .profile_questions {\n      display: flex;\n      flex-flow: column wrap;\n      box-sizing: border-box;\n      width: 30%;\n      font-family: 'Special Elite', cursive;\n      font-size: 1.2em;\n}\n.block__profile .profile_info .profile_questions p {\n        margin: 0px 0px 20px 0px;\n        cursor: default;\n        text-shadow: 3px 2px 3px;\n}\n.block__profile .profile_info .profile_answers {\n      padding: 0px 10px;\n      display: flex;\n      flex-flow: column wrap;\n      box-sizing: border-box;\n      width: 70%;\n      border-left: 1px groove rgba(165, 214, 167, 0.356);\n      font-family: 'Special Elite', cursive;\n      font-size: 1.2em;\n}\n.block__profile .profile_info .profile_answers p {\n        margin: 0px 0px 20px 0px;\n        cursor: default;\n}\n.block__profile .profile_info .profile_answers p:hover {\n        cursor: pointer;\n        text-decoration: underline;\n}\n.block__profile .profile_info .profile_answers input {\n        height: 18px;\n        margin-bottom: 20px;\n}\n", ""]);
 
 // exports
 
@@ -13149,7 +13149,7 @@ if (true) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_profile_vue__ = __webpack_require__(18);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_43ee103e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_profile_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_43ee103e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_template_compiler_preprocessor_engine_pug_node_modules_vue_loader_lib_selector_type_template_index_0_profile_vue__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(3);
 var disposed = false
 function injectStyle (context) {
@@ -13251,24 +13251,6 @@ module.exports = function escape(url) {
 
 /***/ }),
 /* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "0ed964b46cdfeeff9e07717b9285bd7f.ttf";
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "380c56cefb3c2b2e0b42668dda82f233.ttf";
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "27b9efe7ae34478c82311efb90011607.ttf";
-
-/***/ }),
-/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

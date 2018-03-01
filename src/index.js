@@ -1,25 +1,37 @@
 // import ctrl from "./controllers/builderCtrl.js";
-import './styles/styles.scss';
-import Vue from "vue/dist/vue.min.js";
+import './styles/styles';
+import Vue from "vue";
 import VueResource from "vue-resource";
-import toDo from "./modules/todo.vue";
-import clicker from "./modules/clicker.vue";
-import pugTest from "./modules/pugTest.vue";
-import posts from "./modules/posts.vue";
-import profile from "./modules/profile.vue";
+// import toDo from "./modules/todo";
+// import clicker from "./modules/clicker";
+// import pugTest from "./modules/pugTest";
+// import posts from "./modules/posts";
+// import profile from "./modules/profile";
+
+import router from "./router"
 
 Vue.use(VueResource)
 
 new Vue({
     el: "#applications",
-    template: '<div style="width: 100%"> <todo/> <clicker/> <pug/> <profile/> <posts/> </div>',
-    components: {
-        todo: toDo,
-        clicker: clicker,
-        pug: pugTest,
-        profile: profile,
-        posts: posts
-    }
+    template: `
+    <div class="block__router">
+	    <router-link to="/" class="router_link">Clicker</router-link>
+	    <router-link to="/todo" class="router_link">ToDo</router-link>
+	    <router-link to="/pugTest" class="router_link">PugTest</router-link>
+	    <router-link to="/posts" class="router_link">Posts</router-link>
+	    <router-link to="/draw" class="router_link">Draw</router-link>
+	    <router-link to="/profile" class="router_link">Profile</router-link>
+	    <router-view></router-view>
+	</div>`,
+    // components: {
+    //     todo: toDo,
+    //     clicker: clicker,
+    //     pug: pugTest,
+    //     profile: profile,
+    //     posts: posts
+    // },
+    router
 });
 
 // ctrl.render();
@@ -93,7 +105,7 @@ new Vue({
 // })
 
 
-
+// Мой первый код. Из него почти ничего нет в проэкте.
 
 
 // var head = document.createElement('header');

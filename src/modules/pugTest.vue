@@ -32,7 +32,6 @@
 					canImg = new Image(),
 					output = this.file,
 					outputImg = this.image;
-					canImg.setAttribute("v-model", this.image.srcCanvas);
 	
 					input.onchange = function() {
 						let list = this.files,
@@ -61,14 +60,15 @@
 							doc = list[0],
 							reader = new FileReader();
 
-						reader.onload = function(event) {
+						reader.onloadend = function(event) {
 							let text = event.target.result;
 							outputImg.srcCanvas = text;	
-							canImg.setAttribute("src", outputImg.srcCanvas);
+							canImg.setAttribute("src", text);
+							setTimeout( () => {ctx.drawImage(canImg, 0, 0, 300, 150)}, 100);
 																	
 						}						
 						reader.readAsDataURL(doc);
-						setTimeout( () => {ctx.drawImage(canImg, 0, 0, 300, 150)}, 100);
+						
 					}
 		}
 	}
