@@ -1,12 +1,11 @@
 <template>
 
 	<div class="block__main_clicker" id="clicker">
-        <input type="text" id="clickerInput" v-model="counter">
+        <input type="text" id="clickerInput" v-model="counter" disabled>
      	<button id="clickerButton" @click="onClick">{{command}}</button>
     </div>
 
 </template>
-
 
 <script>
 	export default {
@@ -14,7 +13,7 @@
 	    	return {
 	        	command: "Start",
 	        	counter: 0
-	    }
+	    }	
 	},
 	    methods: {
 	        onClick: function() {

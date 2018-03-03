@@ -17,9 +17,6 @@
 		}
 	}
 
-
-
-
 </script>
 
 <style lang="scss">
@@ -38,7 +35,4 @@
 		background-color: $bg_canvas;
 		border-radius: 5px;
 	}
-
-
-
 </style>

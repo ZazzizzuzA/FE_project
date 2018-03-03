@@ -2,35 +2,36 @@
 import './styles/styles';
 import Vue from "vue";
 import VueResource from "vue-resource";
+import router from "./router";
+import Pixi from "./modules/applications";
 // import toDo from "./modules/todo";
 // import clicker from "./modules/clicker";
 // import pugTest from "./modules/pugTest";
 // import posts from "./modules/posts";
 // import profile from "./modules/profile";
 
-import router from "./router"
-
 Vue.use(VueResource)
 
 new Vue({
     el: "#applications",
     template: `
-    <div class="block__router">
-	    <router-link to="/" class="router_link">Clicker</router-link>
-	    <router-link to="/todo" class="router_link">ToDo</router-link>
-	    <router-link to="/pugTest" class="router_link">PugTest</router-link>
-	    <router-link to="/posts" class="router_link">Posts</router-link>
-	    <router-link to="/draw" class="router_link">Draw</router-link>
-	    <router-link to="/profile" class="router_link">Profile</router-link>
-	    <router-view></router-view>
+    <div class="block__sidebar_menu">
+	    <router-link to="/">Clicker</router-link>
+	    <router-link to="/todo">ToDo</router-link>
+	    <router-link to="/pugTest">PugTest</router-link>
+	    <router-link to="/posts">Posts</router-link>
+        <router-link to="/draw">draw</router-link>
+        <router-link to="/applications">Pixi</router-link>
+	    <router-link to="/profile">Profile</router-link>
 	</div>`,
-    // components: {
-    //     todo: toDo,
-    //     clicker: clicker,
-    //     pug: pugTest,
-    //     profile: profile,
-    //     posts: posts
-    // },
+    router
+});
+new Vue({
+    el: "#applicationsView",
+    template: `
+        <div class="block__router" id="applicationsView">
+            <router-view></router-view>
+        </div>`,
     router
 });
 

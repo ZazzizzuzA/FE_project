@@ -1,38 +1,34 @@
     @import '_var.scss';
     @import '_reset.scss';
-    .interface {
-        background-color: #BDBDBD;
-        @include margin(10px, 15px);
-        @include padding(10px, 5px);
-    }
-    
-    .success {
-        @extend .interface;
-        background-color: $green_bg;
-        color: $first_black;
-        &:hover {
-            background-color: $indigo;
-        }
-    }
-    
-    .error {
-        @extend .interface;
-        background-color: $orange;
-        color: $first_black;
-        &:hover {
-            background-color: $red;
-        }
-    }
-    
-    .warning {
-        @extend .interface;
-        background-color: $lime;
-        color: $first_black;
-        &:hover {
-            background-color: $pink_bg;
-        }
-    }
-    
+    // .interface {
+    //     background-color: #BDBDBD;
+    //     @include margin(10px, 15px);
+    //     @include padding(10px, 5px);
+    // }
+    // .success {
+    //     @extend .interface;
+    //     background-color: $green_bg;
+    //     color: $first_black;
+    //     &:hover {
+    //         background-color: $indigo;
+    //     }
+    // }
+    // .error {
+    //     @extend .interface;
+    //     background-color: $orange;
+    //     color: $first_black;
+    //     &:hover {
+    //         background-color: $red;
+    //     }
+    // }
+    // .warning {
+    //     @extend .interface;
+    //     background-color: $lime;
+    //     color: $first_black;
+    //     &:hover {
+    //         background-color: $pink_bg;
+    //     }
+    // }
     body {
         display: flex;
         flex-flow: row wrap;
@@ -75,20 +71,24 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            button {
+            a {
+                box-sizing: border-box;
+                text-decoration: none;
                 color: $first_white;
                 border-style: none;
                 border-top: 2px solid rgba(255, 255, 255, 0.5);
                 background-color: rgba(255, 255, 255, 0.1);
                 padding: 15px;
+                text-align: center;
             }
-            button:last-child {
+            a:last-child {
                 border-bottom: 2px solid rgba(255, 255, 255, 0.5);
             }
-            button:hover {
+            a:hover {
                 background-color: rgba(255, 255, 255, 0.3);
                 border-right: 4px solid $indigo;
                 padding-right: calc(15px - 4px);
+                color: #8b2496;
             }
         }
     }
@@ -116,6 +116,7 @@
     
     .block__main {
         @include padding(15px, 30px);
+        position: relative;
         display: flex;
         background-color: $green;
         align-content: flex-start;
@@ -139,6 +140,7 @@
                 background-color: $grey;
                 width: 150px;
                 text-align: center;
+                cursor: default;
             }
             div:hover {
                 background-color: $indigo;
@@ -150,22 +152,24 @@
             }
         }
     }
-    .block__router{
-    width: 100%;
-    box-sizing: border-box;
-    @include padding( 20px, 5px );
-    @include margin( 20px, 0px );
-
-
-
-        .router_link{
+    
+    .block__router {
+        width: 100%;
+        box-sizing: border-box;
+        @include padding( 20px, 5px);
+        @include margin( 20px, 0px);
+        .router_link {
             display: inline-block;
-            box-sizing: border-box;
-            text-decoration: none;
             color: $yellow;
-            @include padding( 15px, 40px );
-            @include margin( 20px, 0px );
+            @include padding( 15px, 40px);
+            @include margin( 20px, 0px);
             background: $purple;
             border-radius: 3px;
         }
+    }
+    
+    canvas {
+        position: absolute;
+        left: 30%;
+        top: 15%;
     }
