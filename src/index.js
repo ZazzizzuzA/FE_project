@@ -21,7 +21,7 @@ new Vue({
 	    <router-link to="/pugTest">PugTest</router-link>
 	    <router-link to="/posts">Posts</router-link>
         <router-link to="/draw">draw</router-link>
-        <router-link to="/applications">Pixi</router-link>
+        <router-link to="/applications">Game</router-link>
 	    <router-link to="/profile">Profile</router-link>
 	</div>`,
     router
