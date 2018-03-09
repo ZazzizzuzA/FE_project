@@ -1,7 +1,6 @@
 // import ctrl from "./controllers/builderCtrl.js";
 import './styles/styles';
 import Vue from "vue";
-import VueResource from "vue-resource";
 import router from "./router";
 import Pixi from "./modules/applications";
 // import toDo from "./modules/todo";
@@ -9,8 +8,6 @@ import Pixi from "./modules/applications";
 // import pugTest from "./modules/pugTest";
 // import posts from "./modules/posts";
 // import profile from "./modules/profile";
-
-Vue.use(VueResource)
 
 new Vue({
     el: "#applications",

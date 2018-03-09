@@ -12,20 +12,17 @@
 export default {
   data () {
     return {
-      endpoint: 'https://jsonplaceholder.typicode.com/posts',
       posts: []
     }
   },
   methods: {
-    getPosts: function() {
-      this.$http.get(this.endpoint).then( function(response) {
-        this.posts = response.data
-        // console.log(response)
-      }, function(error) {
-        console.log("Something wrong")
-      })
-    }
-  },
+    getPosts:function(url = "https://jsonplaceholder.typicode.com/posts") {
+        return fetch(url).then( response => response.json() )
+
+        	.then( json => this.posts = json );
+
+        }
+    },
   created: function() {
     this.getPosts()
   },

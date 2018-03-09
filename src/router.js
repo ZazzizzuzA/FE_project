@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import VueResource from "vue-resource";
 import toDo from "./modules/todo";
 import clicker from "./modules/clicker";
 import pugTest from "./modules/pugTest";
