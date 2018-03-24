@@ -2,7 +2,7 @@
 import './styles/styles';
 import Vue from "vue";
 import router from "./router";
-import Pixi from "./modules/applications";
+// import Pixi from "./modules/applications";
 // import toDo from "./modules/todo";
 // import clicker from "./modules/clicker";
 // import pugTest from "./modules/pugTest";

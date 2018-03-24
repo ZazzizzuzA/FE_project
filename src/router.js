@@ -6,7 +6,7 @@ import pugTest from "./modules/pugTest";
 import posts from "./modules/posts";
 import profile from "./modules/profile";
 import draw from "./modules/draw";
-import Pixi from "./modules/applications";
+// import Pixi from "./modules/applications";
 
 Vue.use(VueRouter);
 
@@ -34,10 +34,10 @@ export let routes = [{
         path: "/draw",
         component: draw,
     },
-    {
-        path: "/applications",
-        component: Pixi,
-    }
+    // {
+    //     path: "/applications",
+    //     component: Pixi,
+    // }
 
 ];
 export default new VueRouter({
